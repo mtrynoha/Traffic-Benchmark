@@ -1,0 +1,17 @@
+# TensorFlow environment
+# Methods: GMAN, and the TensorFlow variants of DCRNN, FNN, LSTM, ST-MetaNet, STGCN
+#
+# Setup:
+#   python -m venv venv-tensorflow
+#   venv-tensorflow\Scripts\activate
+#   pip install -r requirements-tensorflow.txt
+
+numpy==1.19.4
+pandas==1.1.1
+tensorflow>=2.4.0
+scipy
+matplotlib
+networkx
+gensim
+pyyaml
+scikit-learn

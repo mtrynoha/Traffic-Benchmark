@@ -1,0 +1,15 @@
+# MXNet environment
+# Methods: STSGCN
+#
+# numpy must be <1.17.0 to satisfy mxnet==1.4.1's dependency constraint.
+#
+# Setup:
+#   python -m venv venv-mxnet
+#   venv-mxnet\Scripts\activate
+#   pip install -r requirements-mxnet.txt
+
+numpy==1.16.6
+pandas==1.1.1
+mxnet==1.4.1
+scipy
+matplotlib

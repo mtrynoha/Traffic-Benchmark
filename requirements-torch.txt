@@ -1,0 +1,20 @@
+# PyTorch environment
+# Methods: AGCRN, ASTGCN, DGCRN, DGCRN_BJ, Graph-WaveNet, MTGNN,
+#          and the PyTorch variants of DCRNN, FNN, LSTM, ST-MetaNet, STGCN
+#
+# Setup:
+#   python -m venv venv-torch
+#   venv-torch\Scripts\activate
+#   pip install -r requirements-torch.txt
+
+numpy==1.19.4
+pandas==1.1.1
+torch>=1.1
+scipy
+matplotlib
+tensorboardX==2.5.1
+protobuf==3.19.6
+psutil==5.8.0
+pyyaml
+scikit-learn
+dgl

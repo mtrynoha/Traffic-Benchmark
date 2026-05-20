@@ -1,5 +1,12 @@
-numpy == 1.19.4
-pandas == 1.1.1
-torch >= 1.1
-mxnet == 1.4.1
-tensorflow >= 2.4.0
+# Dependencies are split into per-framework environments due to conflicting
+# numpy constraints (mxnet==1.4.1 requires numpy<1.17.0; tensorflow>=2.4.0
+# requires numpy>=1.19.2).
+#
+# Use the appropriate file for the methods you want to run:
+#
+#   requirements-torch.txt       — AGCRN, ASTGCN, DGCRN, DGCRN_BJ,
+#                                  Graph-WaveNet, MTGNN, and PyTorch
+#                                  variants of DCRNN/FNN/LSTM/ST-MetaNet/STGCN
+#   requirements-tensorflow.txt  — GMAN and TensorFlow variants of
+#                                  DCRNN/FNN/LSTM/ST-MetaNet/STGCN
+#   requirements-mxnet.txt       — STSGCN
