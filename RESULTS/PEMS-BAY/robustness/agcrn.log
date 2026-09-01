@@ -1,0 +1,34 @@
+Loaded: save/agcrn_pemsbay_run0.pth
+Train:  (36465, 12, 325, 2) (36465, 12, 325, 2)
+Val:  (5209, 12, 325, 2) (5209, 12, 325, 2)
+Test:  (10419, 12, 325, 2) (10419, 12, 325, 2)
+  evaluating: original (learned)...
+  evaluating: zeros...
+  evaluating: identity...
+  evaluating: random (renorm)...
+  evaluating: permuted nodes...
+  evaluating: uniform (fully conn.)...
+
+Learned-graph variant      MAE@15m   MAE@30m   MAE@60m    dMAE@15m    dMAE@30m    dMAE@60m
+--------------------------------------------------------------------------------------------
+original (learned)          1.3639    1.6907    1.9682         ---         ---         ---
+zeros                       1.8016    2.6574    3.6238     +0.4377     +0.9667     +1.6556
+identity                    3.9640    5.1557    6.9514     +2.6001     +3.4650     +4.9832
+random (renorm)             1.3954    1.7456    2.0477     +0.0315     +0.0549     +0.0795
+permuted nodes              1.3707    1.7059    1.9879     +0.0068     +0.0152     +0.0197
+uniform (fully conn.)       1.3720    1.7087    1.9910     +0.0082     +0.0181     +0.0228
+
+Note: AGCRN has NO predefined graph; perturbations above corrupt its LEARNED graph S=softmax(relu(EE^T)).
+
+[AGCRN] operational perturbations on learned graph (mean over 3 seeds)
+mode             rate | dMAE@3  dMAE@6  dMAE@12
+----------------------------------------------------
+edge_removal      10% | +0.001  +0.002  +0.003
+weight_noise      10% | +0.000  +0.000  +0.000
+edge_removal      20% | +0.003  +0.005  +0.008
+weight_noise      20% | +0.000  +0.001  +0.001
+edge_removal      30% | +0.006  +0.009  +0.015
+weight_noise      30% | +0.001  +0.002  +0.003
+
+saved: results_agcrn_operational_pemsbay.csv
+Note: targeted-betweenness N/A -- learned graph is dense (softmax), no edge bottlenecks to attack.

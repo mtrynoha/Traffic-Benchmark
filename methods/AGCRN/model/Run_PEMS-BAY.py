@@ -12,6 +12,7 @@ import argparse
 import configparser
 from datetime import datetime
 from model.AGCRN import AGCRN as Network
+
 from model.BasicTrainer import Trainer
 from lib.TrainInits import init_seed
 from lib.dataloader import get_dataloader
@@ -23,7 +24,7 @@ DATASET = 'PEMS-BAY'
 
 MODEL = 'AGCRN'
 
-config_file = './{}_{}.conf'.format(DATASET, MODEL)
+config_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), '{}_{}.conf'.format(DATASET, MODEL))
 
 config = configparser.ConfigParser()
 config.read(config_file)
@@ -135,9 +136,9 @@ args.add_argument('--plot', default=config['log']['plot'], type=eval)
 
 args.add_argument('--dataset_dir',
                   type=str,
-                  default='data/METR-LA',
+                  default='data/PEMS-BAY',
                   help='data path')
-args.add_argument('--device', type=str, default='cuda:1', help='')
+args.add_argument('--device', type=str, default='cuda:0', help='')
 
 args = args.parse_args()
 init_seed(args.seed)

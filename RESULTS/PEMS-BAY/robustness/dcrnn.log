@@ -1,0 +1,36 @@
+methods\DCRNN\lib\utils.py:104: RuntimeWarning: divide by zero encountered in power
+  d_inv = np.power(d, -1).flatten()
+Loaded: models/bay_best_run0.tar
+  evaluating: original...
+  evaluating: zeros...
+  evaluating: identity...
+  evaluating: random (same density)...
+  evaluating: permuted nodes...
+  evaluating: fully connected...
+
+Adj variant                  MAE@15m   MAE@30m   MAE@60m    dMAE@15m    dMAE@30m    dMAE@60m
+----------------------------------------------------------------------------------------------
+original                      1.3498    1.6812    1.9908         ---         ---         ---
+zeros                         1.8324    2.6246    3.8347     +0.4826     +0.9433     +1.8440
+identity                      1.5228    2.0503    2.6971     +0.1730     +0.3690     +0.7064
+random (same density)         1.6275    2.3139    3.1160     +0.2777     +0.6327     +1.1253
+permuted nodes                1.7309    2.4255    3.2165     +0.3811     +0.7443     +1.2257
+fully connected               1.6494    2.2899    3.0194     +0.2996     +0.6086     +1.0286
+
+Note: GRU weight matrices stay frozen -- deltas show diffusion graph contribution.
+      Unlike GWN/DGCRN, DCRNN has NO adaptive adj -- full degradation is visible here.
+
+[DCRNN] operational + targeted perturbations
+mode                    rate | dMAE@3  dMAE@6  dMAE@12
+------------------------------------------------------
+edge_removal             10% |  +0.077   +0.138   +0.240
+edge_removal             20% |  +0.135   +0.239   +0.403
+edge_removal             30% |  +0.186   +0.335   +0.577
+weight_noise             10% |  +0.002   +0.002   +0.003
+weight_noise             20% |  +0.007   +0.010   +0.017
+weight_noise             30% |  +0.018   +0.026   +0.044
+targeted_betweenness     10% |  +0.107   +0.191   +0.353
+targeted_betweenness     20% |  +0.183   +0.322   +0.555
+targeted_betweenness     30% |  +0.259   +0.439   +0.744
+
+saved: results_dcrnn_operational.csv

@@ -1,0 +1,361 @@
+Namespace(addaptadj=True, adjdata='data/sensor_graph/adj_mx_bay.pkl', adjtype='doubletransition', aptonly=False, batch_size=64, data='data/PEMS-BAY', device='cuda:0', dropout=0.3, epochs=100, expid=1, gcn_bool=True, in_dim=2, learning_rate=0.001, nhid=32, num_nodes=325, print_every=50, randomadj=True, runs=3, save='./garage/pems', seq_length=12, weight_decay=0.0001)
+start training...
+Epoch: 001, Train Loss: 2.0639, Train MAPE: 0.0477, Train RMSE: 4.5270, Valid Loss: 2.1042, Valid MAPE: 0.0543, Valid RMSE: 4.3842, Training Time: 115.4984/epoch
+Epoch: 002, Train Loss: 1.8423, Train MAPE: 0.0419, Train RMSE: 4.1560, Valid Loss: 2.0041, Valid MAPE: 0.0497, Valid RMSE: 4.0703, Training Time: 109.1016/epoch
+Epoch: 003, Train Loss: 1.7737, Train MAPE: 0.0401, Train RMSE: 3.9788, Valid Loss: 1.8996, Valid MAPE: 0.0465, Valid RMSE: 3.9811, Training Time: 107.8382/epoch
+Epoch: 004, Train Loss: 1.7241, Train MAPE: 0.0386, Train RMSE: 3.8157, Valid Loss: 1.8412, Valid MAPE: 0.0426, Valid RMSE: 3.8200, Training Time: 108.3118/epoch
+Epoch: 005, Train Loss: 1.6928, Train MAPE: 0.0376, Train RMSE: 3.7150, Valid Loss: 1.8700, Valid MAPE: 0.0465, Valid RMSE: 3.8489, Training Time: 107.6284/epoch
+Epoch: 006, Train Loss: 1.6661, Train MAPE: 0.0368, Train RMSE: 3.6469, Valid Loss: 1.8241, Valid MAPE: 0.0448, Valid RMSE: 3.7578, Training Time: 107.4478/epoch
+Epoch: 007, Train Loss: 1.6495, Train MAPE: 0.0363, Train RMSE: 3.6056, Valid Loss: 1.7634, Valid MAPE: 0.0418, Valid RMSE: 3.6302, Training Time: 107.4159/epoch
+Epoch: 008, Train Loss: 1.6318, Train MAPE: 0.0359, Train RMSE: 3.5628, Valid Loss: 1.7624, Valid MAPE: 0.0398, Valid RMSE: 3.5889, Training Time: 107.5181/epoch
+Epoch: 009, Train Loss: 1.6184, Train MAPE: 0.0355, Train RMSE: 3.5266, Valid Loss: 1.7601, Valid MAPE: 0.0431, Valid RMSE: 3.6408, Training Time: 107.3030/epoch
+Epoch: 010, Train Loss: 1.6079, Train MAPE: 0.0352, Train RMSE: 3.5019, Valid Loss: 1.7335, Valid MAPE: 0.0410, Valid RMSE: 3.5631, Training Time: 107.4129/epoch
+Epoch: 011, Train Loss: 1.5975, Train MAPE: 0.0349, Train RMSE: 3.4802, Valid Loss: 1.7318, Valid MAPE: 0.0411, Valid RMSE: 3.5998, Training Time: 107.3085/epoch
+Epoch: 012, Train Loss: 1.5891, Train MAPE: 0.0347, Train RMSE: 3.4606, Valid Loss: 1.7026, Valid MAPE: 0.0400, Valid RMSE: 3.5185, Training Time: 107.5152/epoch
+Epoch: 013, Train Loss: 1.5786, Train MAPE: 0.0344, Train RMSE: 3.4354, Valid Loss: 1.7049, Valid MAPE: 0.0393, Valid RMSE: 3.5339, Training Time: 107.3008/epoch
+Epoch: 014, Train Loss: 1.5717, Train MAPE: 0.0342, Train RMSE: 3.4237, Valid Loss: 1.7001, Valid MAPE: 0.0380, Valid RMSE: 3.5073, Training Time: 107.4113/epoch
+Epoch: 015, Train Loss: 1.5676, Train MAPE: 0.0341, Train RMSE: 3.4142, Valid Loss: 1.7162, Valid MAPE: 0.0410, Valid RMSE: 3.5675, Training Time: 107.3202/epoch
+Epoch: 016, Train Loss: 1.5578, Train MAPE: 0.0339, Train RMSE: 3.3941, Valid Loss: 1.6812, Valid MAPE: 0.0389, Valid RMSE: 3.4893, Training Time: 107.2886/epoch
+Epoch: 017, Train Loss: 1.5519, Train MAPE: 0.0337, Train RMSE: 3.3805, Valid Loss: 1.6812, Valid MAPE: 0.0393, Valid RMSE: 3.4963, Training Time: 107.3447/epoch
+Epoch: 018, Train Loss: 1.5509, Train MAPE: 0.0337, Train RMSE: 3.3801, Valid Loss: 1.6843, Valid MAPE: 0.0380, Valid RMSE: 3.5073, Training Time: 107.3269/epoch
+Epoch: 019, Train Loss: 1.5410, Train MAPE: 0.0335, Train RMSE: 3.3592, Valid Loss: 1.6658, Valid MAPE: 0.0378, Valid RMSE: 3.4575, Training Time: 107.3164/epoch
+Epoch: 020, Train Loss: 1.5366, Train MAPE: 0.0333, Train RMSE: 3.3507, Valid Loss: 1.6929, Valid MAPE: 0.0381, Valid RMSE: 3.5520, Training Time: 107.4851/epoch
+Epoch: 021, Train Loss: 1.5319, Train MAPE: 0.0332, Train RMSE: 3.3423, Valid Loss: 1.6608, Valid MAPE: 0.0384, Valid RMSE: 3.4173, Training Time: 107.3593/epoch
+Epoch: 022, Train Loss: 1.5283, Train MAPE: 0.0331, Train RMSE: 3.3315, Valid Loss: 1.6469, Valid MAPE: 0.0371, Valid RMSE: 3.4228, Training Time: 107.4099/epoch
+Epoch: 023, Train Loss: 1.5242, Train MAPE: 0.0330, Train RMSE: 3.3247, Valid Loss: 1.6559, Valid MAPE: 0.0374, Valid RMSE: 3.4457, Training Time: 107.3190/epoch
+Epoch: 024, Train Loss: 1.5200, Train MAPE: 0.0329, Train RMSE: 3.3128, Valid Loss: 1.6491, Valid MAPE: 0.0381, Valid RMSE: 3.4370, Training Time: 107.3563/epoch
+Epoch: 025, Train Loss: 1.5171, Train MAPE: 0.0329, Train RMSE: 3.3098, Valid Loss: 1.6972, Valid MAPE: 0.0384, Valid RMSE: 3.5484, Training Time: 107.2577/epoch
+Epoch: 026, Train Loss: 1.5142, Train MAPE: 0.0328, Train RMSE: 3.2993, Valid Loss: 1.6358, Valid MAPE: 0.0378, Valid RMSE: 3.4182, Training Time: 107.2995/epoch
+Epoch: 027, Train Loss: 1.5102, Train MAPE: 0.0327, Train RMSE: 3.2948, Valid Loss: 1.6524, Valid MAPE: 0.0372, Valid RMSE: 3.4659, Training Time: 107.2874/epoch
+Epoch: 028, Train Loss: 1.5092, Train MAPE: 0.0327, Train RMSE: 3.2896, Valid Loss: 1.6378, Valid MAPE: 0.0374, Valid RMSE: 3.4513, Training Time: 107.2880/epoch
+Epoch: 029, Train Loss: 1.5059, Train MAPE: 0.0326, Train RMSE: 3.2871, Valid Loss: 1.6308, Valid MAPE: 0.0368, Valid RMSE: 3.4199, Training Time: 107.2621/epoch
+Epoch: 030, Train Loss: 1.5031, Train MAPE: 0.0325, Train RMSE: 3.2824, Valid Loss: 1.6413, Valid MAPE: 0.0384, Valid RMSE: 3.4137, Training Time: 107.4301/epoch
+Epoch: 031, Train Loss: 1.4974, Train MAPE: 0.0323, Train RMSE: 3.2678, Valid Loss: 1.6746, Valid MAPE: 0.0398, Valid RMSE: 3.5355, Training Time: 107.2774/epoch
+Epoch: 032, Train Loss: 1.4954, Train MAPE: 0.0323, Train RMSE: 3.2651, Valid Loss: 1.6574, Valid MAPE: 0.0389, Valid RMSE: 3.4590, Training Time: 107.3050/epoch
+Epoch: 033, Train Loss: 1.4956, Train MAPE: 0.0323, Train RMSE: 3.2628, Valid Loss: 1.6364, Valid MAPE: 0.0380, Valid RMSE: 3.4319, Training Time: 107.3673/epoch
+Epoch: 034, Train Loss: 1.4923, Train MAPE: 0.0322, Train RMSE: 3.2564, Valid Loss: 1.6459, Valid MAPE: 0.0366, Valid RMSE: 3.4324, Training Time: 107.3049/epoch
+Epoch: 035, Train Loss: 1.4888, Train MAPE: 0.0322, Train RMSE: 3.2497, Valid Loss: 1.6298, Valid MAPE: 0.0379, Valid RMSE: 3.4306, Training Time: 107.2249/epoch
+Epoch: 036, Train Loss: 1.4886, Train MAPE: 0.0321, Train RMSE: 3.2489, Valid Loss: 1.6327, Valid MAPE: 0.0375, Valid RMSE: 3.4110, Training Time: 107.2476/epoch
+Epoch: 037, Train Loss: 1.4857, Train MAPE: 0.0321, Train RMSE: 3.2452, Valid Loss: 1.6375, Valid MAPE: 0.0373, Valid RMSE: 3.4533, Training Time: 107.2558/epoch
+Epoch: 038, Train Loss: 1.4833, Train MAPE: 0.0320, Train RMSE: 3.2372, Valid Loss: 1.6444, Valid MAPE: 0.0371, Valid RMSE: 3.4598, Training Time: 107.3435/epoch
+Epoch: 039, Train Loss: 1.4823, Train MAPE: 0.0320, Train RMSE: 3.2370, Valid Loss: 1.6395, Valid MAPE: 0.0373, Valid RMSE: 3.4657, Training Time: 107.2370/epoch
+Epoch: 040, Train Loss: 1.4806, Train MAPE: 0.0320, Train RMSE: 3.2341, Valid Loss: 1.6385, Valid MAPE: 0.0368, Valid RMSE: 3.4284, Training Time: 107.3713/epoch
+Epoch: 041, Train Loss: 1.4801, Train MAPE: 0.0319, Train RMSE: 3.2323, Valid Loss: 1.6460, Valid MAPE: 0.0364, Valid RMSE: 3.4569, Training Time: 107.3173/epoch
+Epoch: 042, Train Loss: 1.4782, Train MAPE: 0.0319, Train RMSE: 3.2275, Valid Loss: 1.6262, Valid MAPE: 0.0377, Valid RMSE: 3.4270, Training Time: 107.2659/epoch
+Epoch: 043, Train Loss: 1.4736, Train MAPE: 0.0318, Train RMSE: 3.2196, Valid Loss: 1.6361, Valid MAPE: 0.0363, Valid RMSE: 3.4158, Training Time: 107.2769/epoch
+Epoch: 044, Train Loss: 1.4726, Train MAPE: 0.0317, Train RMSE: 3.2144, Valid Loss: 1.6503, Valid MAPE: 0.0390, Valid RMSE: 3.4572, Training Time: 107.9843/epoch
+Epoch: 045, Train Loss: 1.4726, Train MAPE: 0.0317, Train RMSE: 3.2162, Valid Loss: 1.6153, Valid MAPE: 0.0368, Valid RMSE: 3.4040, Training Time: 107.9745/epoch
+Epoch: 046, Train Loss: 1.4711, Train MAPE: 0.0317, Train RMSE: 3.2135, Valid Loss: 1.6140, Valid MAPE: 0.0370, Valid RMSE: 3.4037, Training Time: 109.7915/epoch
+Epoch: 047, Train Loss: 1.4686, Train MAPE: 0.0316, Train RMSE: 3.2059, Valid Loss: 1.6313, Valid MAPE: 0.0378, Valid RMSE: 3.4332, Training Time: 107.4934/epoch
+Epoch: 048, Train Loss: 1.4685, Train MAPE: 0.0317, Train RMSE: 3.2088, Valid Loss: 1.6123, Valid MAPE: 0.0375, Valid RMSE: 3.4000, Training Time: 107.5047/epoch
+Epoch: 049, Train Loss: 1.4675, Train MAPE: 0.0316, Train RMSE: 3.2058, Valid Loss: 1.6277, Valid MAPE: 0.0376, Valid RMSE: 3.4239, Training Time: 108.3037/epoch
+Epoch: 050, Train Loss: 1.4648, Train MAPE: 0.0316, Train RMSE: 3.2013, Valid Loss: 1.6257, Valid MAPE: 0.0376, Valid RMSE: 3.4228, Training Time: 109.6133/epoch
+Epoch: 051, Train Loss: 1.4637, Train MAPE: 0.0315, Train RMSE: 3.1977, Valid Loss: 1.6127, Valid MAPE: 0.0367, Valid RMSE: 3.3974, Training Time: 110.0311/epoch
+Epoch: 052, Train Loss: 1.4629, Train MAPE: 0.0315, Train RMSE: 3.1979, Valid Loss: 1.6116, Valid MAPE: 0.0367, Valid RMSE: 3.3878, Training Time: 108.2476/epoch
+Epoch: 053, Train Loss: 1.4608, Train MAPE: 0.0314, Train RMSE: 3.1907, Valid Loss: 1.6450, Valid MAPE: 0.0382, Valid RMSE: 3.4678, Training Time: 108.8497/epoch
+Epoch: 054, Train Loss: 1.4610, Train MAPE: 0.0315, Train RMSE: 3.1923, Valid Loss: 1.6562, Valid MAPE: 0.0388, Valid RMSE: 3.5076, Training Time: 107.6931/epoch
+Epoch: 055, Train Loss: 1.4586, Train MAPE: 0.0314, Train RMSE: 3.1864, Valid Loss: 1.6070, Valid MAPE: 0.0367, Valid RMSE: 3.3588, Training Time: 107.3368/epoch
+Epoch: 056, Train Loss: 1.4584, Train MAPE: 0.0314, Train RMSE: 3.1843, Valid Loss: 1.6556, Valid MAPE: 0.0400, Valid RMSE: 3.4748, Training Time: 107.2456/epoch
+Epoch: 057, Train Loss: 1.4582, Train MAPE: 0.0314, Train RMSE: 3.1861, Valid Loss: 1.6571, Valid MAPE: 0.0395, Valid RMSE: 3.5121, Training Time: 107.9228/epoch
+Epoch: 058, Train Loss: 1.4570, Train MAPE: 0.0314, Train RMSE: 3.1831, Valid Loss: 1.6102, Valid MAPE: 0.0362, Valid RMSE: 3.3957, Training Time: 109.3466/epoch
+Epoch: 059, Train Loss: 1.4541, Train MAPE: 0.0313, Train RMSE: 3.1771, Valid Loss: 1.6241, Valid MAPE: 0.0381, Valid RMSE: 3.4207, Training Time: 107.5104/epoch
+Epoch: 060, Train Loss: 1.4530, Train MAPE: 0.0313, Train RMSE: 3.1732, Valid Loss: 1.6220, Valid MAPE: 0.0369, Valid RMSE: 3.3986, Training Time: 108.4455/epoch
+Epoch: 061, Train Loss: 1.4541, Train MAPE: 0.0313, Train RMSE: 3.1769, Valid Loss: 1.6141, Valid MAPE: 0.0365, Valid RMSE: 3.3899, Training Time: 107.3782/epoch
+Epoch: 062, Train Loss: 1.4513, Train MAPE: 0.0312, Train RMSE: 3.1694, Valid Loss: 1.6282, Valid MAPE: 0.0368, Valid RMSE: 3.3988, Training Time: 107.2611/epoch
+Epoch: 063, Train Loss: 1.4501, Train MAPE: 0.0312, Train RMSE: 3.1651, Valid Loss: 1.6068, Valid MAPE: 0.0370, Valid RMSE: 3.4000, Training Time: 107.8373/epoch
+Epoch: 064, Train Loss: 1.4484, Train MAPE: 0.0311, Train RMSE: 3.1631, Valid Loss: 1.6251, Valid MAPE: 0.0373, Valid RMSE: 3.4350, Training Time: 107.3949/epoch
+Epoch: 065, Train Loss: 1.4509, Train MAPE: 0.0312, Train RMSE: 3.1702, Valid Loss: 1.6200, Valid MAPE: 0.0372, Valid RMSE: 3.3781, Training Time: 107.5166/epoch
+Epoch: 066, Train Loss: 1.4476, Train MAPE: 0.0311, Train RMSE: 3.1621, Valid Loss: 1.6161, Valid MAPE: 0.0368, Valid RMSE: 3.3821, Training Time: 107.2937/epoch
+Epoch: 067, Train Loss: 1.4477, Train MAPE: 0.0311, Train RMSE: 3.1619, Valid Loss: 1.6132, Valid MAPE: 0.0367, Valid RMSE: 3.3944, Training Time: 107.2876/epoch
+Epoch: 068, Train Loss: 1.4485, Train MAPE: 0.0311, Train RMSE: 3.1648, Valid Loss: 1.6102, Valid MAPE: 0.0364, Valid RMSE: 3.3959, Training Time: 108.0466/epoch
+Epoch: 069, Train Loss: 1.4439, Train MAPE: 0.0310, Train RMSE: 3.1530, Valid Loss: 1.6165, Valid MAPE: 0.0366, Valid RMSE: 3.4110, Training Time: 107.5161/epoch
+Epoch: 070, Train Loss: 1.4471, Train MAPE: 0.0311, Train RMSE: 3.1595, Valid Loss: 1.6171, Valid MAPE: 0.0364, Valid RMSE: 3.4069, Training Time: 107.2890/epoch
+Epoch: 071, Train Loss: 1.4447, Train MAPE: 0.0310, Train RMSE: 3.1538, Valid Loss: 1.6066, Valid MAPE: 0.0371, Valid RMSE: 3.4015, Training Time: 107.3077/epoch
+Epoch: 072, Train Loss: 1.4457, Train MAPE: 0.0311, Train RMSE: 3.1568, Valid Loss: 1.6206, Valid MAPE: 0.0367, Valid RMSE: 3.3817, Training Time: 107.2541/epoch
+Epoch: 073, Train Loss: 1.4440, Train MAPE: 0.0310, Train RMSE: 3.1546, Valid Loss: 1.6144, Valid MAPE: 0.0371, Valid RMSE: 3.3935, Training Time: 107.2726/epoch
+Epoch: 074, Train Loss: 1.4410, Train MAPE: 0.0310, Train RMSE: 3.1475, Valid Loss: 1.6175, Valid MAPE: 0.0369, Valid RMSE: 3.4060, Training Time: 107.2453/epoch
+Epoch: 075, Train Loss: 1.4428, Train MAPE: 0.0310, Train RMSE: 3.1504, Valid Loss: 1.6253, Valid MAPE: 0.0367, Valid RMSE: 3.4132, Training Time: 107.2375/epoch
+Epoch: 076, Train Loss: 1.4432, Train MAPE: 0.0310, Train RMSE: 3.1510, Valid Loss: 1.6158, Valid MAPE: 0.0372, Valid RMSE: 3.4156, Training Time: 107.2864/epoch
+Epoch: 077, Train Loss: 1.4411, Train MAPE: 0.0310, Train RMSE: 3.1473, Valid Loss: 1.6091, Valid MAPE: 0.0368, Valid RMSE: 3.3863, Training Time: 107.2919/epoch
+Epoch: 078, Train Loss: 1.4407, Train MAPE: 0.0309, Train RMSE: 3.1459, Valid Loss: 1.6278, Valid MAPE: 0.0365, Valid RMSE: 3.4597, Training Time: 107.1957/epoch
+Epoch: 079, Train Loss: 1.4376, Train MAPE: 0.0309, Train RMSE: 3.1381, Valid Loss: 1.6346, Valid MAPE: 0.0376, Valid RMSE: 3.4166, Training Time: 107.2692/epoch
+Epoch: 080, Train Loss: 1.4396, Train MAPE: 0.0309, Train RMSE: 3.1440, Valid Loss: 1.6120, Valid MAPE: 0.0364, Valid RMSE: 3.4121, Training Time: 107.2374/epoch
+Epoch: 081, Train Loss: 1.4384, Train MAPE: 0.0309, Train RMSE: 3.1404, Valid Loss: 1.6138, Valid MAPE: 0.0366, Valid RMSE: 3.3962, Training Time: 107.2647/epoch
+Epoch: 082, Train Loss: 1.4388, Train MAPE: 0.0309, Train RMSE: 3.1415, Valid Loss: 1.6277, Valid MAPE: 0.0378, Valid RMSE: 3.4155, Training Time: 107.2199/epoch
+Epoch: 083, Train Loss: 1.4374, Train MAPE: 0.0309, Train RMSE: 3.1382, Valid Loss: 1.6499, Valid MAPE: 0.0365, Valid RMSE: 3.4761, Training Time: 107.2095/epoch
+Epoch: 084, Train Loss: 1.4358, Train MAPE: 0.0308, Train RMSE: 3.1332, Valid Loss: 1.6058, Valid MAPE: 0.0367, Valid RMSE: 3.3927, Training Time: 107.2176/epoch
+Epoch: 085, Train Loss: 1.4337, Train MAPE: 0.0308, Train RMSE: 3.1309, Valid Loss: 1.6053, Valid MAPE: 0.0360, Valid RMSE: 3.3946, Training Time: 107.2394/epoch
+Epoch: 086, Train Loss: 1.4353, Train MAPE: 0.0308, Train RMSE: 3.1347, Valid Loss: 1.6033, Valid MAPE: 0.0364, Valid RMSE: 3.3664, Training Time: 107.1994/epoch
+Epoch: 087, Train Loss: 1.4344, Train MAPE: 0.0308, Train RMSE: 3.1314, Valid Loss: 1.6202, Valid MAPE: 0.0366, Valid RMSE: 3.4350, Training Time: 107.1983/epoch
+Epoch: 088, Train Loss: 1.4336, Train MAPE: 0.0308, Train RMSE: 3.1290, Valid Loss: 1.6120, Valid MAPE: 0.0366, Valid RMSE: 3.3816, Training Time: 107.1532/epoch
+Epoch: 089, Train Loss: 1.4319, Train MAPE: 0.0307, Train RMSE: 3.1264, Valid Loss: 1.6132, Valid MAPE: 0.0361, Valid RMSE: 3.3935, Training Time: 107.1665/epoch
+Epoch: 090, Train Loss: 1.4341, Train MAPE: 0.0308, Train RMSE: 3.1312, Valid Loss: 1.6230, Valid MAPE: 0.0364, Valid RMSE: 3.4189, Training Time: 107.1273/epoch
+Epoch: 091, Train Loss: 1.4301, Train MAPE: 0.0307, Train RMSE: 3.1230, Valid Loss: 1.6217, Valid MAPE: 0.0373, Valid RMSE: 3.4303, Training Time: 107.1504/epoch
+Epoch: 092, Train Loss: 1.4314, Train MAPE: 0.0307, Train RMSE: 3.1247, Valid Loss: 1.6002, Valid MAPE: 0.0366, Valid RMSE: 3.3481, Training Time: 107.2003/epoch
+Epoch: 093, Train Loss: 1.4311, Train MAPE: 0.0307, Train RMSE: 3.1240, Valid Loss: 1.6091, Valid MAPE: 0.0367, Valid RMSE: 3.3909, Training Time: 107.2192/epoch
+Epoch: 094, Train Loss: 1.4308, Train MAPE: 0.0307, Train RMSE: 3.1231, Valid Loss: 1.6206, Valid MAPE: 0.0370, Valid RMSE: 3.3994, Training Time: 107.2234/epoch
+Epoch: 095, Train Loss: 1.4298, Train MAPE: 0.0307, Train RMSE: 3.1194, Valid Loss: 1.6089, Valid MAPE: 0.0370, Valid RMSE: 3.3478, Training Time: 107.2729/epoch
+Epoch: 096, Train Loss: 1.4285, Train MAPE: 0.0306, Train RMSE: 3.1187, Valid Loss: 1.6147, Valid MAPE: 0.0369, Valid RMSE: 3.4050, Training Time: 107.2652/epoch
+Epoch: 097, Train Loss: 1.4296, Train MAPE: 0.0307, Train RMSE: 3.1207, Valid Loss: 1.5989, Valid MAPE: 0.0368, Valid RMSE: 3.3799, Training Time: 107.1870/epoch
+Epoch: 098, Train Loss: 1.4283, Train MAPE: 0.0306, Train RMSE: 3.1175, Valid Loss: 1.6043, Valid MAPE: 0.0367, Valid RMSE: 3.3931, Training Time: 107.1818/epoch
+Epoch: 099, Train Loss: 1.4283, Train MAPE: 0.0306, Train RMSE: 3.1192, Valid Loss: 1.6037, Valid MAPE: 0.0365, Valid RMSE: 3.3904, Training Time: 107.1665/epoch
+Epoch: 100, Train Loss: 1.4283, Train MAPE: 0.0306, Train RMSE: 3.1171, Valid Loss: 1.6305, Valid MAPE: 0.0382, Valid RMSE: 3.4588, Training Time: 107.2487/epoch
+Average Training Time: 107.5998 secs/epoch
+Average Inference Time: 4.8673 secs
+Training finished
+The valid loss on best model is 1.5989
+Evaluate best model on test data for horizon 1, Test MAE: 0.8523, Test MAPE: 0.0165, Test RMSE: 1.5419
+Evaluate best model on test data for horizon 2, Test MAE: 1.1205, Test MAPE: 0.0225, Test RMSE: 2.2205
+Evaluate best model on test data for horizon 3, Test MAE: 1.3072, Test MAPE: 0.0273, Test RMSE: 2.7488
+Evaluate best model on test data for horizon 4, Test MAE: 1.4486, Test MAPE: 0.0313, Test RMSE: 3.1634
+Evaluate best model on test data for horizon 5, Test MAE: 1.5583, Test MAPE: 0.0347, Test RMSE: 3.4918
+Evaluate best model on test data for horizon 6, Test MAE: 1.6465, Test MAPE: 0.0375, Test RMSE: 3.7501
+Evaluate best model on test data for horizon 7, Test MAE: 1.7197, Test MAPE: 0.0399, Test RMSE: 3.9606
+Evaluate best model on test data for horizon 8, Test MAE: 1.7801, Test MAPE: 0.0418, Test RMSE: 4.1301
+Evaluate best model on test data for horizon 9, Test MAE: 1.8313, Test MAPE: 0.0434, Test RMSE: 4.2642
+Evaluate best model on test data for horizon 10, Test MAE: 1.8784, Test MAPE: 0.0450, Test RMSE: 4.3779
+Evaluate best model on test data for horizon 11, Test MAE: 1.9208, Test MAPE: 0.0463, Test RMSE: 4.4788
+Evaluate best model on test data for horizon 12, Test MAE: 1.9621, Test MAPE: 0.0475, Test RMSE: 4.5733
+On average over 12 horizons, Test MAE: 1.5855, Test MAPE: 0.0362, Test RMSE: 3.5584
+Namespace(addaptadj=True, adjdata='data/sensor_graph/adj_mx_bay.pkl', adjtype='doubletransition', aptonly=False, batch_size=64, data='data/PEMS-BAY', device='cuda:0', dropout=0.3, epochs=100, expid=1, gcn_bool=True, in_dim=2, learning_rate=0.001, nhid=32, num_nodes=325, print_every=50, randomadj=True, runs=3, save='./garage/pems', seq_length=12, weight_decay=0.0001)
+start training...
+Epoch: 001, Train Loss: 2.0279, Train MAPE: 0.0467, Train RMSE: 4.4826, Valid Loss: 2.1058, Valid MAPE: 0.0541, Valid RMSE: 4.3528, Training Time: 107.9656/epoch
+Epoch: 002, Train Loss: 1.8371, Train MAPE: 0.0419, Train RMSE: 4.1519, Valid Loss: 2.0924, Valid MAPE: 0.0469, Valid RMSE: 4.4110, Training Time: 107.3879/epoch
+Epoch: 003, Train Loss: 1.7729, Train MAPE: 0.0400, Train RMSE: 3.9756, Valid Loss: 1.8945, Valid MAPE: 0.0444, Valid RMSE: 3.9246, Training Time: 107.4052/epoch
+Epoch: 004, Train Loss: 1.7248, Train MAPE: 0.0387, Train RMSE: 3.8195, Valid Loss: 1.8327, Valid MAPE: 0.0432, Valid RMSE: 3.7642, Training Time: 107.3641/epoch
+Epoch: 005, Train Loss: 1.6918, Train MAPE: 0.0376, Train RMSE: 3.7170, Valid Loss: 1.8256, Valid MAPE: 0.0414, Valid RMSE: 3.7431, Training Time: 107.3964/epoch
+Epoch: 006, Train Loss: 1.6730, Train MAPE: 0.0371, Train RMSE: 3.6612, Valid Loss: 1.8442, Valid MAPE: 0.0459, Valid RMSE: 3.8340, Training Time: 107.2967/epoch
+Epoch: 007, Train Loss: 1.6485, Train MAPE: 0.0364, Train RMSE: 3.6050, Valid Loss: 1.8132, Valid MAPE: 0.0446, Valid RMSE: 3.7445, Training Time: 107.4996/epoch
+Epoch: 008, Train Loss: 1.6343, Train MAPE: 0.0360, Train RMSE: 3.5695, Valid Loss: 1.7628, Valid MAPE: 0.0402, Valid RMSE: 3.5902, Training Time: 107.2557/epoch
+Epoch: 009, Train Loss: 1.6205, Train MAPE: 0.0356, Train RMSE: 3.5361, Valid Loss: 1.7456, Valid MAPE: 0.0406, Valid RMSE: 3.5949, Training Time: 107.5066/epoch
+Epoch: 010, Train Loss: 1.6082, Train MAPE: 0.0353, Train RMSE: 3.5080, Valid Loss: 1.7458, Valid MAPE: 0.0408, Valid RMSE: 3.5742, Training Time: 107.2312/epoch
+Epoch: 011, Train Loss: 1.5980, Train MAPE: 0.0350, Train RMSE: 3.4825, Valid Loss: 1.7405, Valid MAPE: 0.0408, Valid RMSE: 3.6014, Training Time: 107.3154/epoch
+Epoch: 012, Train Loss: 1.5918, Train MAPE: 0.0349, Train RMSE: 3.4701, Valid Loss: 1.7907, Valid MAPE: 0.0392, Valid RMSE: 3.6758, Training Time: 107.2739/epoch
+Epoch: 013, Train Loss: 1.5819, Train MAPE: 0.0346, Train RMSE: 3.4520, Valid Loss: 1.7056, Valid MAPE: 0.0387, Valid RMSE: 3.5204, Training Time: 107.3157/epoch
+Epoch: 014, Train Loss: 1.5785, Train MAPE: 0.0345, Train RMSE: 3.4402, Valid Loss: 1.7052, Valid MAPE: 0.0392, Valid RMSE: 3.5110, Training Time: 107.1827/epoch
+Epoch: 015, Train Loss: 1.5672, Train MAPE: 0.0342, Train RMSE: 3.4185, Valid Loss: 1.7213, Valid MAPE: 0.0391, Valid RMSE: 3.5768, Training Time: 107.2772/epoch
+Epoch: 016, Train Loss: 1.5623, Train MAPE: 0.0341, Train RMSE: 3.4055, Valid Loss: 1.7098, Valid MAPE: 0.0405, Valid RMSE: 3.5910, Training Time: 107.1862/epoch
+Epoch: 017, Train Loss: 1.5536, Train MAPE: 0.0339, Train RMSE: 3.3913, Valid Loss: 1.6911, Valid MAPE: 0.0383, Valid RMSE: 3.5002, Training Time: 107.3268/epoch
+Epoch: 018, Train Loss: 1.5482, Train MAPE: 0.0337, Train RMSE: 3.3789, Valid Loss: 1.6865, Valid MAPE: 0.0380, Valid RMSE: 3.4988, Training Time: 107.2532/epoch
+Epoch: 019, Train Loss: 1.5443, Train MAPE: 0.0336, Train RMSE: 3.3699, Valid Loss: 1.6765, Valid MAPE: 0.0384, Valid RMSE: 3.5078, Training Time: 107.2816/epoch
+Epoch: 020, Train Loss: 1.5365, Train MAPE: 0.0334, Train RMSE: 3.3539, Valid Loss: 1.6729, Valid MAPE: 0.0386, Valid RMSE: 3.4769, Training Time: 107.7908/epoch
+Epoch: 021, Train Loss: 1.5359, Train MAPE: 0.0334, Train RMSE: 3.3540, Valid Loss: 1.7303, Valid MAPE: 0.0414, Valid RMSE: 3.5816, Training Time: 107.5002/epoch
+Epoch: 022, Train Loss: 1.5308, Train MAPE: 0.0333, Train RMSE: 3.3417, Valid Loss: 1.6576, Valid MAPE: 0.0384, Valid RMSE: 3.4822, Training Time: 107.2339/epoch
+Epoch: 023, Train Loss: 1.5246, Train MAPE: 0.0331, Train RMSE: 3.3293, Valid Loss: 1.6734, Valid MAPE: 0.0394, Valid RMSE: 3.4895, Training Time: 107.3783/epoch
+Epoch: 024, Train Loss: 1.5212, Train MAPE: 0.0331, Train RMSE: 3.3232, Valid Loss: 1.6608, Valid MAPE: 0.0384, Valid RMSE: 3.4680, Training Time: 107.5675/epoch
+Epoch: 025, Train Loss: 1.5198, Train MAPE: 0.0330, Train RMSE: 3.3188, Valid Loss: 1.6741, Valid MAPE: 0.0399, Valid RMSE: 3.5075, Training Time: 107.4544/epoch
+Epoch: 026, Train Loss: 1.5160, Train MAPE: 0.0329, Train RMSE: 3.3100, Valid Loss: 1.6404, Valid MAPE: 0.0383, Valid RMSE: 3.4194, Training Time: 107.3518/epoch
+Epoch: 027, Train Loss: 1.5081, Train MAPE: 0.0327, Train RMSE: 3.2964, Valid Loss: 1.6609, Valid MAPE: 0.0387, Valid RMSE: 3.4722, Training Time: 107.3891/epoch
+Epoch: 028, Train Loss: 1.5070, Train MAPE: 0.0327, Train RMSE: 3.2932, Valid Loss: 1.6460, Valid MAPE: 0.0377, Valid RMSE: 3.4300, Training Time: 107.2636/epoch
+Epoch: 029, Train Loss: 1.5034, Train MAPE: 0.0326, Train RMSE: 3.2841, Valid Loss: 1.6589, Valid MAPE: 0.0371, Valid RMSE: 3.4537, Training Time: 107.3453/epoch
+Epoch: 030, Train Loss: 1.5001, Train MAPE: 0.0325, Train RMSE: 3.2788, Valid Loss: 1.6389, Valid MAPE: 0.0372, Valid RMSE: 3.4370, Training Time: 107.4248/epoch
+Epoch: 031, Train Loss: 1.4983, Train MAPE: 0.0325, Train RMSE: 3.2755, Valid Loss: 1.6535, Valid MAPE: 0.0377, Valid RMSE: 3.4497, Training Time: 107.2757/epoch
+Epoch: 032, Train Loss: 1.4954, Train MAPE: 0.0324, Train RMSE: 3.2681, Valid Loss: 1.6502, Valid MAPE: 0.0373, Valid RMSE: 3.4518, Training Time: 107.2316/epoch
+Epoch: 033, Train Loss: 1.4908, Train MAPE: 0.0322, Train RMSE: 3.2572, Valid Loss: 1.6522, Valid MAPE: 0.0369, Valid RMSE: 3.4548, Training Time: 107.2819/epoch
+Epoch: 034, Train Loss: 1.4898, Train MAPE: 0.0322, Train RMSE: 3.2552, Valid Loss: 1.6499, Valid MAPE: 0.0378, Valid RMSE: 3.4383, Training Time: 107.2461/epoch
+Epoch: 035, Train Loss: 1.4886, Train MAPE: 0.0322, Train RMSE: 3.2528, Valid Loss: 1.6429, Valid MAPE: 0.0378, Valid RMSE: 3.4306, Training Time: 107.3164/epoch
+Epoch: 036, Train Loss: 1.4866, Train MAPE: 0.0322, Train RMSE: 3.2458, Valid Loss: 1.6333, Valid MAPE: 0.0368, Valid RMSE: 3.4131, Training Time: 107.2520/epoch
+Epoch: 037, Train Loss: 1.4848, Train MAPE: 0.0321, Train RMSE: 3.2428, Valid Loss: 1.6311, Valid MAPE: 0.0365, Valid RMSE: 3.3850, Training Time: 107.2796/epoch
+Epoch: 038, Train Loss: 1.4831, Train MAPE: 0.0321, Train RMSE: 3.2400, Valid Loss: 1.6268, Valid MAPE: 0.0370, Valid RMSE: 3.4001, Training Time: 107.2248/epoch
+Epoch: 039, Train Loss: 1.4779, Train MAPE: 0.0319, Train RMSE: 3.2284, Valid Loss: 1.6533, Valid MAPE: 0.0371, Valid RMSE: 3.4483, Training Time: 107.3121/epoch
+Epoch: 040, Train Loss: 1.4778, Train MAPE: 0.0319, Train RMSE: 3.2294, Valid Loss: 1.6380, Valid MAPE: 0.0368, Valid RMSE: 3.4214, Training Time: 107.2462/epoch
+Epoch: 041, Train Loss: 1.4747, Train MAPE: 0.0318, Train RMSE: 3.2200, Valid Loss: 1.6353, Valid MAPE: 0.0380, Valid RMSE: 3.4335, Training Time: 107.1997/epoch
+Epoch: 042, Train Loss: 1.4751, Train MAPE: 0.0318, Train RMSE: 3.2220, Valid Loss: 1.6297, Valid MAPE: 0.0377, Valid RMSE: 3.3736, Training Time: 107.2351/epoch
+Epoch: 043, Train Loss: 1.4724, Train MAPE: 0.0318, Train RMSE: 3.2147, Valid Loss: 1.6244, Valid MAPE: 0.0366, Valid RMSE: 3.4040, Training Time: 107.2695/epoch
+Epoch: 044, Train Loss: 1.4701, Train MAPE: 0.0317, Train RMSE: 3.2101, Valid Loss: 1.6291, Valid MAPE: 0.0366, Valid RMSE: 3.4081, Training Time: 107.2006/epoch
+Epoch: 045, Train Loss: 1.4691, Train MAPE: 0.0317, Train RMSE: 3.2103, Valid Loss: 1.6391, Valid MAPE: 0.0375, Valid RMSE: 3.4372, Training Time: 107.2742/epoch
+Epoch: 046, Train Loss: 1.4657, Train MAPE: 0.0316, Train RMSE: 3.2007, Valid Loss: 1.6240, Valid MAPE: 0.0372, Valid RMSE: 3.4040, Training Time: 107.2751/epoch
+Epoch: 047, Train Loss: 1.4698, Train MAPE: 0.0317, Train RMSE: 3.2084, Valid Loss: 1.6501, Valid MAPE: 0.0376, Valid RMSE: 3.4515, Training Time: 107.2310/epoch
+Epoch: 048, Train Loss: 1.4642, Train MAPE: 0.0315, Train RMSE: 3.1981, Valid Loss: 1.6324, Valid MAPE: 0.0375, Valid RMSE: 3.4143, Training Time: 107.2429/epoch
+Epoch: 049, Train Loss: 1.4623, Train MAPE: 0.0315, Train RMSE: 3.1933, Valid Loss: 1.6385, Valid MAPE: 0.0376, Valid RMSE: 3.4130, Training Time: 107.2661/epoch
+Epoch: 050, Train Loss: 1.4621, Train MAPE: 0.0315, Train RMSE: 3.1919, Valid Loss: 1.6319, Valid MAPE: 0.0367, Valid RMSE: 3.4111, Training Time: 107.2734/epoch
+Epoch: 051, Train Loss: 1.4606, Train MAPE: 0.0315, Train RMSE: 3.1909, Valid Loss: 1.6700, Valid MAPE: 0.0367, Valid RMSE: 3.4915, Training Time: 107.2237/epoch
+Epoch: 052, Train Loss: 1.4563, Train MAPE: 0.0313, Train RMSE: 3.1792, Valid Loss: 1.6383, Valid MAPE: 0.0378, Valid RMSE: 3.4263, Training Time: 107.2451/epoch
+Epoch: 053, Train Loss: 1.4567, Train MAPE: 0.0314, Train RMSE: 3.1801, Valid Loss: 1.6259, Valid MAPE: 0.0366, Valid RMSE: 3.4184, Training Time: 107.2245/epoch
+Epoch: 054, Train Loss: 1.4590, Train MAPE: 0.0314, Train RMSE: 3.1840, Valid Loss: 1.6454, Valid MAPE: 0.0369, Valid RMSE: 3.4647, Training Time: 107.2744/epoch
+Epoch: 055, Train Loss: 1.4544, Train MAPE: 0.0313, Train RMSE: 3.1766, Valid Loss: 1.6301, Valid MAPE: 0.0369, Valid RMSE: 3.4034, Training Time: 107.2492/epoch
+Epoch: 056, Train Loss: 1.4533, Train MAPE: 0.0313, Train RMSE: 3.1741, Valid Loss: 1.6354, Valid MAPE: 0.0362, Valid RMSE: 3.4363, Training Time: 107.2191/epoch
+Epoch: 057, Train Loss: 1.4521, Train MAPE: 0.0312, Train RMSE: 3.1683, Valid Loss: 1.6458, Valid MAPE: 0.0373, Valid RMSE: 3.4461, Training Time: 107.2135/epoch
+Epoch: 058, Train Loss: 1.4505, Train MAPE: 0.0312, Train RMSE: 3.1673, Valid Loss: 1.6516, Valid MAPE: 0.0383, Valid RMSE: 3.4816, Training Time: 107.2542/epoch
+Epoch: 059, Train Loss: 1.4527, Train MAPE: 0.0313, Train RMSE: 3.1704, Valid Loss: 1.6339, Valid MAPE: 0.0369, Valid RMSE: 3.4506, Training Time: 107.3200/epoch
+Epoch: 060, Train Loss: 1.4492, Train MAPE: 0.0312, Train RMSE: 3.1637, Valid Loss: 1.6296, Valid MAPE: 0.0368, Valid RMSE: 3.4050, Training Time: 107.2890/epoch
+Epoch: 061, Train Loss: 1.4449, Train MAPE: 0.0311, Train RMSE: 3.1542, Valid Loss: 1.6417, Valid MAPE: 0.0381, Valid RMSE: 3.4296, Training Time: 107.3081/epoch
+Epoch: 062, Train Loss: 1.4479, Train MAPE: 0.0311, Train RMSE: 3.1606, Valid Loss: 1.6196, Valid MAPE: 0.0368, Valid RMSE: 3.3959, Training Time: 107.6877/epoch
+Epoch: 063, Train Loss: 1.4467, Train MAPE: 0.0311, Train RMSE: 3.1565, Valid Loss: 1.6163, Valid MAPE: 0.0363, Valid RMSE: 3.3855, Training Time: 107.2563/epoch
+Epoch: 064, Train Loss: 1.4431, Train MAPE: 0.0310, Train RMSE: 3.1489, Valid Loss: 1.6345, Valid MAPE: 0.0375, Valid RMSE: 3.4297, Training Time: 107.2834/epoch
+Epoch: 065, Train Loss: 1.4466, Train MAPE: 0.0311, Train RMSE: 3.1565, Valid Loss: 1.6337, Valid MAPE: 0.0379, Valid RMSE: 3.4599, Training Time: 107.2586/epoch
+Epoch: 066, Train Loss: 1.4442, Train MAPE: 0.0311, Train RMSE: 3.1531, Valid Loss: 1.6221, Valid MAPE: 0.0366, Valid RMSE: 3.3898, Training Time: 107.2395/epoch
+Epoch: 067, Train Loss: 1.4415, Train MAPE: 0.0310, Train RMSE: 3.1456, Valid Loss: 1.6222, Valid MAPE: 0.0364, Valid RMSE: 3.4114, Training Time: 107.2070/epoch
+Epoch: 068, Train Loss: 1.4426, Train MAPE: 0.0310, Train RMSE: 3.1475, Valid Loss: 1.6225, Valid MAPE: 0.0376, Valid RMSE: 3.4098, Training Time: 107.2115/epoch
+Epoch: 069, Train Loss: 1.4404, Train MAPE: 0.0310, Train RMSE: 3.1438, Valid Loss: 1.6409, Valid MAPE: 0.0367, Valid RMSE: 3.4451, Training Time: 107.2089/epoch
+Epoch: 070, Train Loss: 1.4398, Train MAPE: 0.0309, Train RMSE: 3.1416, Valid Loss: 1.6540, Valid MAPE: 0.0372, Valid RMSE: 3.4326, Training Time: 107.2313/epoch
+Epoch: 071, Train Loss: 1.4394, Train MAPE: 0.0309, Train RMSE: 3.1402, Valid Loss: 1.6365, Valid MAPE: 0.0371, Valid RMSE: 3.4353, Training Time: 107.2690/epoch
+Epoch: 072, Train Loss: 1.4403, Train MAPE: 0.0310, Train RMSE: 3.1426, Valid Loss: 1.6322, Valid MAPE: 0.0376, Valid RMSE: 3.4270, Training Time: 107.2270/epoch
+Epoch: 073, Train Loss: 1.4387, Train MAPE: 0.0309, Train RMSE: 3.1411, Valid Loss: 1.6294, Valid MAPE: 0.0366, Valid RMSE: 3.4271, Training Time: 107.2742/epoch
+Epoch: 074, Train Loss: 1.4384, Train MAPE: 0.0309, Train RMSE: 3.1391, Valid Loss: 1.6315, Valid MAPE: 0.0372, Valid RMSE: 3.4203, Training Time: 107.2819/epoch
+Epoch: 075, Train Loss: 1.4343, Train MAPE: 0.0308, Train RMSE: 3.1298, Valid Loss: 1.6200, Valid MAPE: 0.0365, Valid RMSE: 3.4084, Training Time: 107.2401/epoch
+Epoch: 076, Train Loss: 1.4344, Train MAPE: 0.0308, Train RMSE: 3.1285, Valid Loss: 1.6249, Valid MAPE: 0.0368, Valid RMSE: 3.4242, Training Time: 107.3373/epoch
+Epoch: 077, Train Loss: 1.4342, Train MAPE: 0.0308, Train RMSE: 3.1283, Valid Loss: 1.6277, Valid MAPE: 0.0368, Valid RMSE: 3.4078, Training Time: 107.2334/epoch
+Epoch: 078, Train Loss: 1.4339, Train MAPE: 0.0308, Train RMSE: 3.1286, Valid Loss: 1.6307, Valid MAPE: 0.0370, Valid RMSE: 3.4340, Training Time: 107.2243/epoch
+Epoch: 079, Train Loss: 1.4333, Train MAPE: 0.0308, Train RMSE: 3.1269, Valid Loss: 1.6322, Valid MAPE: 0.0369, Valid RMSE: 3.4449, Training Time: 107.5240/epoch
+Epoch: 080, Train Loss: 1.4325, Train MAPE: 0.0307, Train RMSE: 3.1248, Valid Loss: 1.6314, Valid MAPE: 0.0370, Valid RMSE: 3.4039, Training Time: 107.3782/epoch
+Epoch: 081, Train Loss: 1.4314, Train MAPE: 0.0307, Train RMSE: 3.1215, Valid Loss: 1.6369, Valid MAPE: 0.0361, Valid RMSE: 3.4525, Training Time: 107.3667/epoch
+Epoch: 082, Train Loss: 1.4336, Train MAPE: 0.0308, Train RMSE: 3.1281, Valid Loss: 1.6330, Valid MAPE: 0.0375, Valid RMSE: 3.4375, Training Time: 107.3649/epoch
+Epoch: 083, Train Loss: 1.4295, Train MAPE: 0.0307, Train RMSE: 3.1178, Valid Loss: 1.6500, Valid MAPE: 0.0370, Valid RMSE: 3.4700, Training Time: 107.3411/epoch
+Epoch: 084, Train Loss: 1.4295, Train MAPE: 0.0307, Train RMSE: 3.1180, Valid Loss: 1.6416, Valid MAPE: 0.0368, Valid RMSE: 3.4560, Training Time: 107.3718/epoch
+Epoch: 085, Train Loss: 1.4279, Train MAPE: 0.0306, Train RMSE: 3.1124, Valid Loss: 1.6770, Valid MAPE: 0.0372, Valid RMSE: 3.5291, Training Time: 107.3277/epoch
+Epoch: 086, Train Loss: 1.4291, Train MAPE: 0.0307, Train RMSE: 3.1172, Valid Loss: 1.6401, Valid MAPE: 0.0366, Valid RMSE: 3.4760, Training Time: 107.3398/epoch
+Epoch: 087, Train Loss: 1.4290, Train MAPE: 0.0307, Train RMSE: 3.1158, Valid Loss: 1.6388, Valid MAPE: 0.0369, Valid RMSE: 3.4578, Training Time: 107.3789/epoch
+Epoch: 088, Train Loss: 1.4266, Train MAPE: 0.0306, Train RMSE: 3.1110, Valid Loss: 1.6218, Valid MAPE: 0.0371, Valid RMSE: 3.3965, Training Time: 107.4273/epoch
+Epoch: 089, Train Loss: 1.4246, Train MAPE: 0.0305, Train RMSE: 3.1064, Valid Loss: 1.6428, Valid MAPE: 0.0367, Valid RMSE: 3.4314, Training Time: 107.3783/epoch
+Epoch: 090, Train Loss: 1.4287, Train MAPE: 0.0307, Train RMSE: 3.1172, Valid Loss: 1.6375, Valid MAPE: 0.0367, Valid RMSE: 3.4544, Training Time: 107.3703/epoch
+Epoch: 091, Train Loss: 1.4265, Train MAPE: 0.0306, Train RMSE: 3.1109, Valid Loss: 1.6299, Valid MAPE: 0.0370, Valid RMSE: 3.4426, Training Time: 107.5753/epoch
+Epoch: 092, Train Loss: 1.4212, Train MAPE: 0.0305, Train RMSE: 3.0991, Valid Loss: 1.6303, Valid MAPE: 0.0367, Valid RMSE: 3.4296, Training Time: 107.4018/epoch
+Epoch: 093, Train Loss: 1.4239, Train MAPE: 0.0305, Train RMSE: 3.1065, Valid Loss: 1.6492, Valid MAPE: 0.0375, Valid RMSE: 3.4728, Training Time: 107.4082/epoch
+Epoch: 094, Train Loss: 1.4266, Train MAPE: 0.0306, Train RMSE: 3.1110, Valid Loss: 1.6606, Valid MAPE: 0.0383, Valid RMSE: 3.4280, Training Time: 107.4720/epoch
+Epoch: 095, Train Loss: 1.4217, Train MAPE: 0.0305, Train RMSE: 3.0996, Valid Loss: 1.6463, Valid MAPE: 0.0366, Valid RMSE: 3.4553, Training Time: 107.4818/epoch
+Epoch: 096, Train Loss: 1.4211, Train MAPE: 0.0305, Train RMSE: 3.1000, Valid Loss: 1.6310, Valid MAPE: 0.0370, Valid RMSE: 3.4309, Training Time: 107.8436/epoch
+Epoch: 097, Train Loss: 1.4215, Train MAPE: 0.0305, Train RMSE: 3.0984, Valid Loss: 1.6374, Valid MAPE: 0.0370, Valid RMSE: 3.4424, Training Time: 107.4921/epoch
+Epoch: 098, Train Loss: 1.4213, Train MAPE: 0.0305, Train RMSE: 3.0993, Valid Loss: 1.6356, Valid MAPE: 0.0373, Valid RMSE: 3.4589, Training Time: 107.4429/epoch
+Epoch: 099, Train Loss: 1.4210, Train MAPE: 0.0305, Train RMSE: 3.0994, Valid Loss: 1.6382, Valid MAPE: 0.0375, Valid RMSE: 3.4447, Training Time: 107.3843/epoch
+Epoch: 100, Train Loss: 1.4211, Train MAPE: 0.0305, Train RMSE: 3.1001, Valid Loss: 1.6856, Valid MAPE: 0.0369, Valid RMSE: 3.5302, Training Time: 107.4630/epoch
+Average Training Time: 107.3358 secs/epoch
+Average Inference Time: 4.8590 secs
+Training finished
+The valid loss on best model is 1.6163
+Evaluate best model on test data for horizon 1, Test MAE: 0.8505, Test MAPE: 0.0164, Test RMSE: 1.5395
+Evaluate best model on test data for horizon 2, Test MAE: 1.1189, Test MAPE: 0.0225, Test RMSE: 2.2166
+Evaluate best model on test data for horizon 3, Test MAE: 1.3059, Test MAPE: 0.0271, Test RMSE: 2.7380
+Evaluate best model on test data for horizon 4, Test MAE: 1.4470, Test MAPE: 0.0307, Test RMSE: 3.1460
+Evaluate best model on test data for horizon 5, Test MAE: 1.5575, Test MAPE: 0.0338, Test RMSE: 3.4672
+Evaluate best model on test data for horizon 6, Test MAE: 1.6480, Test MAPE: 0.0363, Test RMSE: 3.7236
+Evaluate best model on test data for horizon 7, Test MAE: 1.7260, Test MAPE: 0.0385, Test RMSE: 3.9354
+Evaluate best model on test data for horizon 8, Test MAE: 1.7938, Test MAPE: 0.0404, Test RMSE: 4.1094
+Evaluate best model on test data for horizon 9, Test MAE: 1.8522, Test MAPE: 0.0420, Test RMSE: 4.2535
+Evaluate best model on test data for horizon 10, Test MAE: 1.9028, Test MAPE: 0.0434, Test RMSE: 4.3744
+Evaluate best model on test data for horizon 11, Test MAE: 1.9506, Test MAPE: 0.0448, Test RMSE: 4.4828
+Evaluate best model on test data for horizon 12, Test MAE: 1.9998, Test MAPE: 0.0461, Test RMSE: 4.5926
+On average over 12 horizons, Test MAE: 1.5961, Test MAPE: 0.0352, Test RMSE: 3.5483
+Namespace(addaptadj=True, adjdata='data/sensor_graph/adj_mx_bay.pkl', adjtype='doubletransition', aptonly=False, batch_size=64, data='data/PEMS-BAY', device='cuda:0', dropout=0.3, epochs=100, expid=1, gcn_bool=True, in_dim=2, learning_rate=0.001, nhid=32, num_nodes=325, print_every=50, randomadj=True, runs=3, save='./garage/pems', seq_length=12, weight_decay=0.0001)
+start training...
+Epoch: 001, Train Loss: 2.0430, Train MAPE: 0.0470, Train RMSE: 4.4977, Valid Loss: 2.1440, Valid MAPE: 0.0485, Valid RMSE: 4.4605, Training Time: 108.2021/epoch
+Epoch: 002, Train Loss: 1.8371, Train MAPE: 0.0419, Train RMSE: 4.1484, Valid Loss: 1.9750, Valid MAPE: 0.0478, Valid RMSE: 4.1128, Training Time: 107.4550/epoch
+Epoch: 003, Train Loss: 1.7829, Train MAPE: 0.0404, Train RMSE: 4.0167, Valid Loss: 1.8959, Valid MAPE: 0.0438, Valid RMSE: 3.9266, Training Time: 107.5459/epoch
+Epoch: 004, Train Loss: 1.7338, Train MAPE: 0.0389, Train RMSE: 3.8594, Valid Loss: 1.8344, Valid MAPE: 0.0431, Valid RMSE: 3.7471, Training Time: 107.5303/epoch
+Epoch: 005, Train Loss: 1.6961, Train MAPE: 0.0378, Train RMSE: 3.7223, Valid Loss: 1.8167, Valid MAPE: 0.0420, Valid RMSE: 3.7144, Training Time: 107.6407/epoch
+Epoch: 006, Train Loss: 1.6642, Train MAPE: 0.0367, Train RMSE: 3.6350, Valid Loss: 1.8041, Valid MAPE: 0.0437, Valid RMSE: 3.7106, Training Time: 107.3094/epoch
+Epoch: 007, Train Loss: 1.6450, Train MAPE: 0.0362, Train RMSE: 3.5897, Valid Loss: 1.8086, Valid MAPE: 0.0422, Valid RMSE: 3.6844, Training Time: 107.3451/epoch
+Epoch: 008, Train Loss: 1.6351, Train MAPE: 0.0360, Train RMSE: 3.5602, Valid Loss: 1.7422, Valid MAPE: 0.0408, Valid RMSE: 3.5764, Training Time: 107.3131/epoch
+Epoch: 009, Train Loss: 1.6193, Train MAPE: 0.0355, Train RMSE: 3.5277, Valid Loss: 1.7355, Valid MAPE: 0.0394, Valid RMSE: 3.5783, Training Time: 107.3528/epoch
+Epoch: 010, Train Loss: 1.6090, Train MAPE: 0.0352, Train RMSE: 3.5058, Valid Loss: 1.7150, Valid MAPE: 0.0399, Valid RMSE: 3.5402, Training Time: 107.2664/epoch
+Epoch: 011, Train Loss: 1.5976, Train MAPE: 0.0349, Train RMSE: 3.4787, Valid Loss: 1.7524, Valid MAPE: 0.0423, Valid RMSE: 3.6017, Training Time: 107.3649/epoch
+Epoch: 012, Train Loss: 1.5881, Train MAPE: 0.0347, Train RMSE: 3.4584, Valid Loss: 1.7290, Valid MAPE: 0.0384, Valid RMSE: 3.5598, Training Time: 107.2528/epoch
+Epoch: 013, Train Loss: 1.5817, Train MAPE: 0.0345, Train RMSE: 3.4408, Valid Loss: 1.7124, Valid MAPE: 0.0387, Valid RMSE: 3.5280, Training Time: 107.3165/epoch
+Epoch: 014, Train Loss: 1.5717, Train MAPE: 0.0343, Train RMSE: 3.4180, Valid Loss: 1.6949, Valid MAPE: 0.0398, Valid RMSE: 3.4955, Training Time: 107.3463/epoch
+Epoch: 015, Train Loss: 1.5658, Train MAPE: 0.0341, Train RMSE: 3.4034, Valid Loss: 1.7697, Valid MAPE: 0.0445, Valid RMSE: 3.6453, Training Time: 107.4346/epoch
+Epoch: 016, Train Loss: 1.5580, Train MAPE: 0.0339, Train RMSE: 3.3887, Valid Loss: 1.6841, Valid MAPE: 0.0380, Valid RMSE: 3.4688, Training Time: 107.3156/epoch
+Epoch: 017, Train Loss: 1.5527, Train MAPE: 0.0337, Train RMSE: 3.3765, Valid Loss: 1.6987, Valid MAPE: 0.0385, Valid RMSE: 3.5255, Training Time: 107.3348/epoch
+Epoch: 018, Train Loss: 1.5474, Train MAPE: 0.0336, Train RMSE: 3.3652, Valid Loss: 1.6643, Valid MAPE: 0.0376, Valid RMSE: 3.4345, Training Time: 107.2991/epoch
+Epoch: 019, Train Loss: 1.5419, Train MAPE: 0.0335, Train RMSE: 3.3539, Valid Loss: 1.6927, Valid MAPE: 0.0395, Valid RMSE: 3.5054, Training Time: 107.6532/epoch
+Epoch: 020, Train Loss: 1.5356, Train MAPE: 0.0333, Train RMSE: 3.3398, Valid Loss: 1.6559, Valid MAPE: 0.0380, Valid RMSE: 3.4439, Training Time: 107.1645/epoch
+Epoch: 021, Train Loss: 1.5322, Train MAPE: 0.0332, Train RMSE: 3.3314, Valid Loss: 1.6846, Valid MAPE: 0.0406, Valid RMSE: 3.4894, Training Time: 107.2767/epoch
+Epoch: 022, Train Loss: 1.5259, Train MAPE: 0.0331, Train RMSE: 3.3204, Valid Loss: 1.6469, Valid MAPE: 0.0374, Valid RMSE: 3.4136, Training Time: 107.1681/epoch
+Epoch: 023, Train Loss: 1.5226, Train MAPE: 0.0330, Train RMSE: 3.3150, Valid Loss: 1.6435, Valid MAPE: 0.0376, Valid RMSE: 3.4156, Training Time: 107.2825/epoch
+Epoch: 024, Train Loss: 1.5190, Train MAPE: 0.0329, Train RMSE: 3.3071, Valid Loss: 1.6506, Valid MAPE: 0.0381, Valid RMSE: 3.4389, Training Time: 107.2686/epoch
+Epoch: 025, Train Loss: 1.5138, Train MAPE: 0.0327, Train RMSE: 3.2932, Valid Loss: 1.6393, Valid MAPE: 0.0381, Valid RMSE: 3.4056, Training Time: 107.2282/epoch
+Epoch: 026, Train Loss: 1.5109, Train MAPE: 0.0327, Train RMSE: 3.2880, Valid Loss: 1.6535, Valid MAPE: 0.0376, Valid RMSE: 3.4431, Training Time: 107.2697/epoch
+Epoch: 027, Train Loss: 1.5088, Train MAPE: 0.0326, Train RMSE: 3.2846, Valid Loss: 1.6378, Valid MAPE: 0.0375, Valid RMSE: 3.4140, Training Time: 107.3306/epoch
+Epoch: 028, Train Loss: 1.5060, Train MAPE: 0.0326, Train RMSE: 3.2773, Valid Loss: 1.6374, Valid MAPE: 0.0378, Valid RMSE: 3.4343, Training Time: 107.2276/epoch
+Epoch: 029, Train Loss: 1.5012, Train MAPE: 0.0324, Train RMSE: 3.2694, Valid Loss: 1.6498, Valid MAPE: 0.0386, Valid RMSE: 3.4463, Training Time: 107.3407/epoch
+Epoch: 030, Train Loss: 1.4965, Train MAPE: 0.0323, Train RMSE: 3.2571, Valid Loss: 1.6441, Valid MAPE: 0.0382, Valid RMSE: 3.4322, Training Time: 107.2947/epoch
+Epoch: 031, Train Loss: 1.4969, Train MAPE: 0.0323, Train RMSE: 3.2573, Valid Loss: 1.6248, Valid MAPE: 0.0374, Valid RMSE: 3.3921, Training Time: 107.2882/epoch
+Epoch: 032, Train Loss: 1.4920, Train MAPE: 0.0322, Train RMSE: 3.2495, Valid Loss: 1.6314, Valid MAPE: 0.0372, Valid RMSE: 3.4173, Training Time: 107.2604/epoch
+Epoch: 033, Train Loss: 1.4903, Train MAPE: 0.0322, Train RMSE: 3.2453, Valid Loss: 1.6424, Valid MAPE: 0.0376, Valid RMSE: 3.4188, Training Time: 107.2800/epoch
+Epoch: 034, Train Loss: 1.4889, Train MAPE: 0.0321, Train RMSE: 3.2402, Valid Loss: 1.6455, Valid MAPE: 0.0369, Valid RMSE: 3.4335, Training Time: 107.3292/epoch
+Epoch: 035, Train Loss: 1.4865, Train MAPE: 0.0321, Train RMSE: 3.2364, Valid Loss: 1.6261, Valid MAPE: 0.0374, Valid RMSE: 3.3918, Training Time: 107.2961/epoch
+Epoch: 036, Train Loss: 1.4836, Train MAPE: 0.0320, Train RMSE: 3.2332, Valid Loss: 1.6294, Valid MAPE: 0.0381, Valid RMSE: 3.4076, Training Time: 107.2365/epoch
+Epoch: 037, Train Loss: 1.4816, Train MAPE: 0.0320, Train RMSE: 3.2269, Valid Loss: 1.6597, Valid MAPE: 0.0373, Valid RMSE: 3.4538, Training Time: 107.2580/epoch
+Epoch: 038, Train Loss: 1.4825, Train MAPE: 0.0320, Train RMSE: 3.2284, Valid Loss: 1.6174, Valid MAPE: 0.0371, Valid RMSE: 3.3832, Training Time: 107.3012/epoch
+Epoch: 039, Train Loss: 1.4777, Train MAPE: 0.0318, Train RMSE: 3.2150, Valid Loss: 1.6221, Valid MAPE: 0.0370, Valid RMSE: 3.3935, Training Time: 107.3123/epoch
+Epoch: 040, Train Loss: 1.4738, Train MAPE: 0.0318, Train RMSE: 3.2099, Valid Loss: 1.6171, Valid MAPE: 0.0372, Valid RMSE: 3.3845, Training Time: 107.2772/epoch
+Epoch: 041, Train Loss: 1.4749, Train MAPE: 0.0318, Train RMSE: 3.2154, Valid Loss: 1.6233, Valid MAPE: 0.0366, Valid RMSE: 3.3828, Training Time: 107.5786/epoch
+Epoch: 042, Train Loss: 1.4703, Train MAPE: 0.0317, Train RMSE: 3.2022, Valid Loss: 1.6510, Valid MAPE: 0.0373, Valid RMSE: 3.4600, Training Time: 107.2639/epoch
+Epoch: 043, Train Loss: 1.4706, Train MAPE: 0.0317, Train RMSE: 3.2016, Valid Loss: 1.6466, Valid MAPE: 0.0380, Valid RMSE: 3.4605, Training Time: 107.3436/epoch
+Epoch: 044, Train Loss: 1.4692, Train MAPE: 0.0317, Train RMSE: 3.1980, Valid Loss: 1.6270, Valid MAPE: 0.0375, Valid RMSE: 3.4083, Training Time: 107.2412/epoch
+Epoch: 045, Train Loss: 1.4661, Train MAPE: 0.0316, Train RMSE: 3.1904, Valid Loss: 1.6299, Valid MAPE: 0.0367, Valid RMSE: 3.4165, Training Time: 107.2731/epoch
+Epoch: 046, Train Loss: 1.4657, Train MAPE: 0.0316, Train RMSE: 3.1921, Valid Loss: 1.6347, Valid MAPE: 0.0375, Valid RMSE: 3.4223, Training Time: 107.2336/epoch
+Epoch: 047, Train Loss: 1.4627, Train MAPE: 0.0315, Train RMSE: 3.1849, Valid Loss: 1.6297, Valid MAPE: 0.0364, Valid RMSE: 3.4236, Training Time: 107.2798/epoch
+Epoch: 048, Train Loss: 1.4609, Train MAPE: 0.0314, Train RMSE: 3.1794, Valid Loss: 1.6269, Valid MAPE: 0.0369, Valid RMSE: 3.3833, Training Time: 107.2530/epoch
+Epoch: 049, Train Loss: 1.4607, Train MAPE: 0.0314, Train RMSE: 3.1815, Valid Loss: 1.6350, Valid MAPE: 0.0383, Valid RMSE: 3.3971, Training Time: 107.2796/epoch
+Epoch: 050, Train Loss: 1.4592, Train MAPE: 0.0314, Train RMSE: 3.1775, Valid Loss: 1.6161, Valid MAPE: 0.0370, Valid RMSE: 3.3840, Training Time: 107.2771/epoch
+Epoch: 051, Train Loss: 1.4584, Train MAPE: 0.0314, Train RMSE: 3.1754, Valid Loss: 1.6396, Valid MAPE: 0.0373, Valid RMSE: 3.4236, Training Time: 107.3677/epoch
+Epoch: 052, Train Loss: 1.4555, Train MAPE: 0.0313, Train RMSE: 3.1717, Valid Loss: 1.6272, Valid MAPE: 0.0363, Valid RMSE: 3.4201, Training Time: 107.3105/epoch
+Epoch: 053, Train Loss: 1.4560, Train MAPE: 0.0313, Train RMSE: 3.1718, Valid Loss: 1.6078, Valid MAPE: 0.0366, Valid RMSE: 3.3696, Training Time: 107.2867/epoch
+Epoch: 054, Train Loss: 1.4534, Train MAPE: 0.0312, Train RMSE: 3.1656, Valid Loss: 1.6187, Valid MAPE: 0.0368, Valid RMSE: 3.4095, Training Time: 107.2916/epoch
+Epoch: 055, Train Loss: 1.4517, Train MAPE: 0.0312, Train RMSE: 3.1625, Valid Loss: 1.6127, Valid MAPE: 0.0369, Valid RMSE: 3.3721, Training Time: 107.4463/epoch
+Epoch: 056, Train Loss: 1.4528, Train MAPE: 0.0313, Train RMSE: 3.1641, Valid Loss: 1.6338, Valid MAPE: 0.0368, Valid RMSE: 3.4178, Training Time: 107.2612/epoch
+Epoch: 057, Train Loss: 1.4504, Train MAPE: 0.0312, Train RMSE: 3.1592, Valid Loss: 1.6227, Valid MAPE: 0.0371, Valid RMSE: 3.4142, Training Time: 107.3100/epoch
+Epoch: 058, Train Loss: 1.4506, Train MAPE: 0.0312, Train RMSE: 3.1613, Valid Loss: 1.6189, Valid MAPE: 0.0365, Valid RMSE: 3.4092, Training Time: 107.2872/epoch
+Epoch: 059, Train Loss: 1.4460, Train MAPE: 0.0311, Train RMSE: 3.1506, Valid Loss: 1.6128, Valid MAPE: 0.0366, Valid RMSE: 3.3777, Training Time: 107.3334/epoch
+Epoch: 060, Train Loss: 1.4472, Train MAPE: 0.0311, Train RMSE: 3.1521, Valid Loss: 1.6268, Valid MAPE: 0.0366, Valid RMSE: 3.4157, Training Time: 107.2918/epoch
+Epoch: 061, Train Loss: 1.4464, Train MAPE: 0.0311, Train RMSE: 3.1504, Valid Loss: 1.6437, Valid MAPE: 0.0384, Valid RMSE: 3.4506, Training Time: 107.3032/epoch
+Epoch: 062, Train Loss: 1.4436, Train MAPE: 0.0310, Train RMSE: 3.1443, Valid Loss: 1.6353, Valid MAPE: 0.0366, Valid RMSE: 3.3951, Training Time: 107.2809/epoch
+Epoch: 063, Train Loss: 1.4442, Train MAPE: 0.0310, Train RMSE: 3.1460, Valid Loss: 1.6076, Valid MAPE: 0.0365, Valid RMSE: 3.3804, Training Time: 107.2196/epoch
+Epoch: 064, Train Loss: 1.4438, Train MAPE: 0.0310, Train RMSE: 3.1441, Valid Loss: 1.6174, Valid MAPE: 0.0370, Valid RMSE: 3.3981, Training Time: 107.2233/epoch
+Epoch: 065, Train Loss: 1.4409, Train MAPE: 0.0309, Train RMSE: 3.1393, Valid Loss: 1.6158, Valid MAPE: 0.0368, Valid RMSE: 3.3973, Training Time: 107.3349/epoch
+Epoch: 066, Train Loss: 1.4406, Train MAPE: 0.0309, Train RMSE: 3.1415, Valid Loss: 1.6318, Valid MAPE: 0.0368, Valid RMSE: 3.4414, Training Time: 107.2095/epoch
+Epoch: 067, Train Loss: 1.4407, Train MAPE: 0.0309, Train RMSE: 3.1385, Valid Loss: 1.6135, Valid MAPE: 0.0378, Valid RMSE: 3.3842, Training Time: 107.2791/epoch
+Epoch: 068, Train Loss: 1.4394, Train MAPE: 0.0309, Train RMSE: 3.1373, Valid Loss: 1.6144, Valid MAPE: 0.0375, Valid RMSE: 3.4052, Training Time: 107.3062/epoch
+Epoch: 069, Train Loss: 1.4368, Train MAPE: 0.0308, Train RMSE: 3.1306, Valid Loss: 1.6200, Valid MAPE: 0.0367, Valid RMSE: 3.4261, Training Time: 107.2404/epoch
+Epoch: 070, Train Loss: 1.4386, Train MAPE: 0.0309, Train RMSE: 3.1346, Valid Loss: 1.6273, Valid MAPE: 0.0380, Valid RMSE: 3.4041, Training Time: 107.3936/epoch
+Epoch: 071, Train Loss: 1.4351, Train MAPE: 0.0308, Train RMSE: 3.1274, Valid Loss: 1.6090, Valid MAPE: 0.0372, Valid RMSE: 3.3938, Training Time: 107.4592/epoch
+Epoch: 072, Train Loss: 1.4363, Train MAPE: 0.0308, Train RMSE: 3.1309, Valid Loss: 1.6170, Valid MAPE: 0.0365, Valid RMSE: 3.3979, Training Time: 107.5287/epoch
+Epoch: 073, Train Loss: 1.4362, Train MAPE: 0.0308, Train RMSE: 3.1292, Valid Loss: 1.6195, Valid MAPE: 0.0371, Valid RMSE: 3.4092, Training Time: 107.4095/epoch
+Epoch: 074, Train Loss: 1.4333, Train MAPE: 0.0307, Train RMSE: 3.1240, Valid Loss: 1.6197, Valid MAPE: 0.0369, Valid RMSE: 3.4319, Training Time: 107.4336/epoch
+Epoch: 075, Train Loss: 1.4308, Train MAPE: 0.0307, Train RMSE: 3.1174, Valid Loss: 1.6132, Valid MAPE: 0.0364, Valid RMSE: 3.3936, Training Time: 107.3305/epoch
+Epoch: 076, Train Loss: 1.4324, Train MAPE: 0.0307, Train RMSE: 3.1204, Valid Loss: 1.6261, Valid MAPE: 0.0382, Valid RMSE: 3.4002, Training Time: 109.2312/epoch
+Epoch: 077, Train Loss: 1.4304, Train MAPE: 0.0307, Train RMSE: 3.1156, Valid Loss: 1.6044, Valid MAPE: 0.0363, Valid RMSE: 3.3827, Training Time: 1678.6532/epoch
+Epoch: 078, Train Loss: 1.4306, Train MAPE: 0.0307, Train RMSE: 3.1188, Valid Loss: 1.6397, Valid MAPE: 0.0392, Valid RMSE: 3.4265, Training Time: 111.4238/epoch
+Epoch: 079, Train Loss: 1.4281, Train MAPE: 0.0306, Train RMSE: 3.1128, Valid Loss: 1.6107, Valid MAPE: 0.0368, Valid RMSE: 3.3639, Training Time: 109.9212/epoch
+Epoch: 080, Train Loss: 1.4284, Train MAPE: 0.0306, Train RMSE: 3.1143, Valid Loss: 1.6004, Valid MAPE: 0.0362, Valid RMSE: 3.3695, Training Time: 109.6697/epoch
+Epoch: 081, Train Loss: 1.4298, Train MAPE: 0.0307, Train RMSE: 3.1163, Valid Loss: 1.6202, Valid MAPE: 0.0366, Valid RMSE: 3.3772, Training Time: 109.6254/epoch
+Epoch: 082, Train Loss: 1.4274, Train MAPE: 0.0306, Train RMSE: 3.1125, Valid Loss: 1.6285, Valid MAPE: 0.0384, Valid RMSE: 3.4044, Training Time: 109.6545/epoch
+Epoch: 083, Train Loss: 1.4271, Train MAPE: 0.0306, Train RMSE: 3.1101, Valid Loss: 1.6129, Valid MAPE: 0.0366, Valid RMSE: 3.3899, Training Time: 109.6430/epoch
+Epoch: 084, Train Loss: 1.4267, Train MAPE: 0.0306, Train RMSE: 3.1074, Valid Loss: 1.6039, Valid MAPE: 0.0363, Valid RMSE: 3.3826, Training Time: 109.6241/epoch
+Epoch: 085, Train Loss: 1.4265, Train MAPE: 0.0306, Train RMSE: 3.1086, Valid Loss: 1.6049, Valid MAPE: 0.0366, Valid RMSE: 3.3761, Training Time: 109.6291/epoch
+Epoch: 086, Train Loss: 1.4249, Train MAPE: 0.0306, Train RMSE: 3.1063, Valid Loss: 1.6175, Valid MAPE: 0.0363, Valid RMSE: 3.3819, Training Time: 109.7844/epoch
+Epoch: 087, Train Loss: 1.4241, Train MAPE: 0.0305, Train RMSE: 3.1040, Valid Loss: 1.6056, Valid MAPE: 0.0362, Valid RMSE: 3.3882, Training Time: 109.6863/epoch
+Epoch: 088, Train Loss: 1.4249, Train MAPE: 0.0306, Train RMSE: 3.1049, Valid Loss: 1.6120, Valid MAPE: 0.0360, Valid RMSE: 3.3745, Training Time: 109.6897/epoch
+Epoch: 089, Train Loss: 1.4221, Train MAPE: 0.0305, Train RMSE: 3.1009, Valid Loss: 1.6364, Valid MAPE: 0.0368, Valid RMSE: 3.4209, Training Time: 109.7027/epoch
+Epoch: 090, Train Loss: 1.4226, Train MAPE: 0.0305, Train RMSE: 3.1009, Valid Loss: 1.6127, Valid MAPE: 0.0360, Valid RMSE: 3.3787, Training Time: 109.6794/epoch
+Epoch: 091, Train Loss: 1.4202, Train MAPE: 0.0304, Train RMSE: 3.0961, Valid Loss: 1.6048, Valid MAPE: 0.0359, Valid RMSE: 3.3702, Training Time: 109.6494/epoch
+Epoch: 092, Train Loss: 1.4209, Train MAPE: 0.0304, Train RMSE: 3.0956, Valid Loss: 1.6080, Valid MAPE: 0.0366, Valid RMSE: 3.4020, Training Time: 109.6717/epoch
+Epoch: 093, Train Loss: 1.4202, Train MAPE: 0.0304, Train RMSE: 3.0961, Valid Loss: 1.6194, Valid MAPE: 0.0363, Valid RMSE: 3.3959, Training Time: 109.6804/epoch
+Epoch: 094, Train Loss: 1.4200, Train MAPE: 0.0304, Train RMSE: 3.0947, Valid Loss: 1.6180, Valid MAPE: 0.0364, Valid RMSE: 3.4044, Training Time: 109.7147/epoch
+Epoch: 095, Train Loss: 1.4185, Train MAPE: 0.0304, Train RMSE: 3.0920, Valid Loss: 1.5984, Valid MAPE: 0.0359, Valid RMSE: 3.3576, Training Time: 109.7153/epoch
+Epoch: 096, Train Loss: 1.4179, Train MAPE: 0.0304, Train RMSE: 3.0896, Valid Loss: 1.6244, Valid MAPE: 0.0379, Valid RMSE: 3.4213, Training Time: 109.6743/epoch
+Epoch: 097, Train Loss: 1.4173, Train MAPE: 0.0304, Train RMSE: 3.0894, Valid Loss: 1.6023, Valid MAPE: 0.0367, Valid RMSE: 3.3925, Training Time: 118.2326/epoch
+Epoch: 098, Train Loss: 1.4178, Train MAPE: 0.0304, Train RMSE: 3.0920, Valid Loss: 1.6138, Valid MAPE: 0.0367, Valid RMSE: 3.3839, Training Time: 122.1975/epoch
+Epoch: 099, Train Loss: 1.4193, Train MAPE: 0.0304, Train RMSE: 3.0936, Valid Loss: 1.6296, Valid MAPE: 0.0373, Valid RMSE: 3.4162, Training Time: 109.8358/epoch
+Epoch: 100, Train Loss: 1.4159, Train MAPE: 0.0303, Train RMSE: 3.0884, Valid Loss: 1.6015, Valid MAPE: 0.0369, Valid RMSE: 3.3681, Training Time: 113.9650/epoch
+Average Training Time: 123.8809 secs/epoch
+Average Inference Time: 4.9121 secs
+Training finished
+The valid loss on best model is 1.5984
+Evaluate best model on test data for horizon 1, Test MAE: 0.8509, Test MAPE: 0.0163, Test RMSE: 1.5437
+Evaluate best model on test data for horizon 2, Test MAE: 1.1204, Test MAPE: 0.0224, Test RMSE: 2.2220
+Evaluate best model on test data for horizon 3, Test MAE: 1.3076, Test MAPE: 0.0271, Test RMSE: 2.7476
+Evaluate best model on test data for horizon 4, Test MAE: 1.4496, Test MAPE: 0.0309, Test RMSE: 3.1656
+Evaluate best model on test data for horizon 5, Test MAE: 1.5597, Test MAPE: 0.0341, Test RMSE: 3.4931
+Evaluate best model on test data for horizon 6, Test MAE: 1.6489, Test MAPE: 0.0368, Test RMSE: 3.7504
+Evaluate best model on test data for horizon 7, Test MAE: 1.7216, Test MAPE: 0.0390, Test RMSE: 3.9599
+Evaluate best model on test data for horizon 8, Test MAE: 1.7819, Test MAPE: 0.0409, Test RMSE: 4.1263
+Evaluate best model on test data for horizon 9, Test MAE: 1.8337, Test MAPE: 0.0426, Test RMSE: 4.2605
+Evaluate best model on test data for horizon 10, Test MAE: 1.8787, Test MAPE: 0.0439, Test RMSE: 4.3735
+Evaluate best model on test data for horizon 11, Test MAE: 1.9206, Test MAPE: 0.0452, Test RMSE: 4.4735
+Evaluate best model on test data for horizon 12, Test MAE: 1.9615, Test MAPE: 0.0463, Test RMSE: 4.5697
+On average over 12 horizons, Test MAE: 1.5862, Test MAPE: 0.0355, Test RMSE: 3.5571
+test|horizon	MAE-mean	RMSE-mean	MAPE-mean	MAE-std	RMSE-std	MAPE-std
+3	1.3069	2.7448	0.0271	0.0007	0.0048	0.0001
+6	1.6478	3.7414	0.0369	0.0010	0.0125	0.0005
+12	1.9745	4.5785	0.0466	0.0179	0.0101	0.0006

@@ -1,0 +1,35 @@
+methods\Graph-WaveNet\util.py:79: RuntimeWarning: divide by zero encountered in power
+  d_inv = np.power(rowsum, -1).flatten()
+Loaded: garage/pems_exp1_best_1.6.pth
+  evaluating: original...
+  evaluating: zeros...
+  evaluating: identity...
+  evaluating: random (same density)...
+  evaluating: permuted nodes...
+  evaluating: fully connected...
+
+Adj variant                  MAE@15m   MAE@30m   MAE@60m    dMAE@15m    dMAE@30m    dMAE@60m
+----------------------------------------------------------------------------------------------
+original                      1.3076    1.6489    1.9615         ---         ---         ---
+zeros                         1.5838    2.1852    2.9158     +0.2762     +0.5363     +0.9543
+identity                      1.5970    2.2734    3.0929     +0.2894     +0.6245     +1.1314
+random (same density)         1.6614    2.6344    3.3404     +0.3538     +0.9856     +1.3789
+permuted nodes                1.5593    2.2929    2.9980     +0.2517     +0.6440     +1.0365
+fully connected               1.8860    3.2721    3.7423     +0.5784     +1.6232     +1.7808
+
+Note: adaptive adj (nodevec1/nodevec2) stays frozen -- deltas show fixed-graph contribution.
+
+[GWN] operational + targeted perturbations
+mode                    rate | dMAE@3  dMAE@6  dMAE@12
+------------------------------------------------------
+edge_removal             10% |  +0.007   +0.015   +0.028
+edge_removal             20% |  +0.015   +0.028   +0.045
+edge_removal             30% |  +0.031   +0.062   +0.103
+weight_noise             10% |  +0.001   +0.001   +0.002
+weight_noise             20% |  +0.002   +0.004   +0.005
+weight_noise             30% |  +0.004   +0.008   +0.012
+targeted_betweenness     10% |  +0.014   +0.027   +0.044
+targeted_betweenness     20% |  +0.027   +0.050   +0.080
+targeted_betweenness     30% |  +0.041   +0.078   +0.126
+
+saved: results_gwn_operational.csv

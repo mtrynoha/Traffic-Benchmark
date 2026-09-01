@@ -1,0 +1,124 @@
+(venv-torch) PS C:\Documents\code\Traffic-Benchmark_Fork> python train_benchmark.py --model DGCRN --data METR-LA
+Namespace(LOAD_INITIAL=False, OUTPUT_PREDICTION=False, TEST_ONLY=False, adj_data='./data/sensor_graph/adj_mx.pkl', batch_size=64, cl=True, cl_decay_steps=4000.0, clip=5, data='./data/METR-LA', device='cuda:0', dropout=0.3, epochs=110, expid='DGCRN_metrla', gcn_depth=2, hyperGNN_dim=16, in_dim=2, layers=3, learning_rate=0.001, new_training_method=False, node_dim=40, num_nodes=207, print_every=10, propalpha=0.05, rnn_size=64, runs=3, save='./save/', seq_in_len=12, seq_out_len=12, step_size1=2500, subgraph_size=20, tanhalpha=3, tolerance=100, weight_decay=0.0001)
+Number of model parameters is 199441
+start training...
+C:\Documents\code\Traffic-Benchmark_Fork\methods\DGCRN\net.py:262: UserWarning: nn.init.orthogonal is now deprecated in favor of nn.init.orthogonal_.
+  nn.init.orthogonal(Hidden_State)
+C:\Documents\code\Traffic-Benchmark_Fork\methods\DGCRN\net.py:263: UserWarning: nn.init.orthogonal is now deprecated in favor of nn.init.orthogonal_.
+  nn.init.orthogonal(Cell_State)
+C:\Documents\code\venv-torch\lib\site-packages\torch\nn\functional.py:1806: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+C:\Documents\code\venv-torch\lib\site-packages\torch\nn\functional.py:1795: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+Epoch: 001, Inference Time: 10.4513 secs
+Epoch: 001, Train Loss: 2.9202, Train MAPE: 0.0728, Train RMSE: 5.0442, Valid Loss: 6.9133, Valid MAPE: 0.2240, Valid RMSE: 10.3246, Training Time: 107.2818/epoch
+Epoch: 011, Inference Time: 9.9801 secs
+Epoch: 011, Train Loss: 2.2104, Train MAPE: 0.0516, Train RMSE: 3.8510, Valid Loss: 4.3403, Valid MAPE: 0.1169, Valid RMSE: 7.4936, Training Time: 102.5957/epoch
+Epoch: 021, Inference Time: 9.7768 secs
+Epoch: 021, Train Loss: 2.1281, Train MAPE: 0.0488, Train RMSE: 3.6783, Valid Loss: 3.1717, Valid MAPE: 0.0899, Valid RMSE: 5.9167, Training Time: 116.5764/epoch
+Epoch: 031, Inference Time: 10.0841 secs
+Epoch: 031, Train Loss: 2.0608, Train MAPE: 0.0470, Train RMSE: 3.5525, Valid Loss: 3.0245, Valid MAPE: 0.0887, Valid RMSE: 5.9398, Training Time: 122.7273/epoch
+Epoch: 041, Inference Time: 10.4053 secs
+Epoch: 041, Train Loss: 2.0305, Train MAPE: 0.0461, Train RMSE: 3.5008, Valid Loss: 2.8437, Valid MAPE: 0.0771, Valid RMSE: 5.6099, Training Time: 137.6789/epoch
+Epoch: 051, Inference Time: 10.0511 secs
+Epoch: 051, Train Loss: 2.0126, Train MAPE: 0.0456, Train RMSE: 3.4702, Valid Loss: 2.8299, Valid MAPE: 0.0777, Valid RMSE: 5.4176, Training Time: 146.5241/epoch
+Epoch: 061, Inference Time: 9.9152 secs
+Epoch: 061, Train Loss: 2.0193, Train MAPE: 0.0459, Train RMSE: 3.4985, Valid Loss: 2.7507, Valid MAPE: 0.0740, Valid RMSE: 5.4348, Training Time: 161.9849/epoch
+Epoch: 071, Inference Time: 10.0965 secs
+Epoch: 071, Train Loss: 2.0472, Train MAPE: 0.0468, Train RMSE: 3.5734, Valid Loss: 2.7476, Valid MAPE: 0.0768, Valid RMSE: 5.4572, Training Time: 166.5276/epoch
+Epoch: 081, Inference Time: 10.1815 secs
+Epoch: 081, Train Loss: 2.1104, Train MAPE: 0.0488, Train RMSE: 3.7483, Valid Loss: 2.7213, Valid MAPE: 0.0717, Valid RMSE: 5.3587, Training Time: 173.1803/epoch
+Epoch: 091, Inference Time: 9.8588 secs
+Epoch: 091, Train Loss: 2.2254, Train MAPE: 0.0527, Train RMSE: 4.0647, Valid Loss: 2.7271, Valid MAPE: 0.0767, Valid RMSE: 5.4064, Training Time: 173.8882/epoch
+Epoch: 101, Inference Time: 10.1875 secs
+Epoch: 101, Train Loss: 2.4021, Train MAPE: 0.0591, Train RMSE: 4.5620, Valid Loss: 2.7497, Valid MAPE: 0.0763, Valid RMSE: 5.4610, Training Time: 172.7758/epoch
+Average Training Time: 145.5645 secs/epoch
+Average Inference Time: 10.0584 secs
+Training finished
+The valid loss on best model is 2.6769, epoch:102
+Evaluate best model on test data for horizon 3, Test MAE: 2.6211, Test MAPE: 0.0662, Test RMSE: 5.0446
+Evaluate best model on test data for horizon 6, Test MAE: 2.9915, Test MAPE: 0.0790, Test RMSE: 6.0842
+Evaluate best model on test data for horizon 9, Test MAE: 3.2552, Test MAPE: 0.0872, Test RMSE: 6.7694
+Evaluate best model on test data for horizon 12, Test MAE: 3.4666, Test MAPE: 0.0931, Test RMSE: 7.2892
+Namespace(LOAD_INITIAL=False, OUTPUT_PREDICTION=False, TEST_ONLY=False, adj_data='./data/sensor_graph/adj_mx.pkl', batch_size=64, cl=True, cl_decay_steps=4000.0, clip=5, data='./data/METR-LA', device='cuda:0', dropout=0.3, epochs=110, expid='DGCRN_metrla', gcn_depth=2, hyperGNN_dim=16, in_dim=2, layers=3, learning_rate=0.001, new_training_method=False, node_dim=40, num_nodes=207, print_every=10, propalpha=0.05, rnn_size=64, runs=3, save='./save/', seq_in_len=12, seq_out_len=12, step_size1=2500, subgraph_size=20, tanhalpha=3, tolerance=100, weight_decay=0.0001)
+Number of model parameters is 199441
+start training...
+Epoch: 001, Inference Time: 10.0099 secs
+Epoch: 001, Train Loss: 2.8348, Train MAPE: 0.0700, Train RMSE: 4.9251, Valid Loss: 7.8152, Valid MAPE: 0.1959, Valid RMSE: 10.0573, Training Time: 95.6617/epoch
+Epoch: 011, Inference Time: 9.7764 secs
+Epoch: 011, Train Loss: 2.2113, Train MAPE: 0.0516, Train RMSE: 3.8533, Valid Loss: 5.4064, Valid MAPE: 0.1218, Valid RMSE: 8.6331, Training Time: 103.3494/epoch
+Epoch: 021, Inference Time: 9.9292 secs
+Epoch: 021, Train Loss: 2.1499, Train MAPE: 0.0496, Train RMSE: 3.7263, Valid Loss: 3.0724, Valid MAPE: 0.0843, Valid RMSE: 5.8917, Training Time: 117.0778/epoch
+Epoch: 031, Inference Time: 9.9422 secs
+Epoch: 031, Train Loss: 2.0782, Train MAPE: 0.0474, Train RMSE: 3.5806, Valid Loss: 2.9398, Valid MAPE: 0.0810, Valid RMSE: 5.7891, Training Time: 124.6798/epoch
+Epoch: 041, Inference Time: 10.1152 secs
+Epoch: 041, Train Loss: 2.0421, Train MAPE: 0.0464, Train RMSE: 3.5198, Valid Loss: 2.8132, Valid MAPE: 0.0774, Valid RMSE: 5.5737, Training Time: 138.5547/epoch
+Epoch: 051, Inference Time: 9.8688 secs
+Epoch: 051, Train Loss: 2.0259, Train MAPE: 0.0460, Train RMSE: 3.4952, Valid Loss: 2.7917, Valid MAPE: 0.0740, Valid RMSE: 5.5084, Training Time: 145.1609/epoch
+Epoch: 061, Inference Time: 9.9735 secs
+Epoch: 061, Train Loss: 2.0313, Train MAPE: 0.0462, Train RMSE: 3.5219, Valid Loss: 2.8469, Valid MAPE: 0.0741, Valid RMSE: 5.6367, Training Time: 160.7822/epoch
+Epoch: 071, Inference Time: 10.1553 secs
+Epoch: 071, Train Loss: 2.0500, Train MAPE: 0.0469, Train RMSE: 3.5788, Valid Loss: 2.7360, Valid MAPE: 0.0760, Valid RMSE: 5.4233, Training Time: 167.9174/epoch
+Epoch: 081, Inference Time: 10.0084 secs
+Epoch: 081, Train Loss: 2.1160, Train MAPE: 0.0491, Train RMSE: 3.7633, Valid Loss: 2.8042, Valid MAPE: 0.0829, Valid RMSE: 5.6212, Training Time: 174.6328/epoch
+Epoch: 091, Inference Time: 10.0898 secs
+Epoch: 091, Train Loss: 2.2343, Train MAPE: 0.0532, Train RMSE: 4.0924, Valid Loss: 2.7313, Valid MAPE: 0.0739, Valid RMSE: 5.4670, Training Time: 176.3126/epoch
+Epoch: 101, Inference Time: 10.1770 secs
+Epoch: 101, Train Loss: 2.3998, Train MAPE: 0.0591, Train RMSE: 4.5548, Valid Loss: 2.7223, Valid MAPE: 0.0754, Valid RMSE: 5.3287, Training Time: 179.2145/epoch
+Average Training Time: 146.7851 secs/epoch
+Average Inference Time: 10.0344 secs
+Training finished
+The valid loss on best model is 2.6776, epoch:89
+Evaluate best model on test data for horizon 3, Test MAE: 2.6256, Test MAPE: 0.0674, Test RMSE: 5.0576
+Evaluate best model on test data for horizon 6, Test MAE: 3.0028, Test MAPE: 0.0823, Test RMSE: 6.1349
+Evaluate best model on test data for horizon 9, Test MAE: 3.2641, Test MAPE: 0.0927, Test RMSE: 6.8360
+Evaluate best model on test data for horizon 12, Test MAE: 3.4719, Test MAPE: 0.1001, Test RMSE: 7.3466
+Namespace(LOAD_INITIAL=False, OUTPUT_PREDICTION=False, TEST_ONLY=False, adj_data='./data/sensor_graph/adj_mx.pkl', batch_size=64, cl=True, cl_decay_steps=4000.0, clip=5, data='./data/METR-LA', device='cuda:0', dropout=0.3, epochs=110, expid='DGCRN_metrla', gcn_depth=2, hyperGNN_dim=16, in_dim=2, layers=3, learning_rate=0.001, new_training_method=False, node_dim=40, num_nodes=207, print_every=10, propalpha=0.05, rnn_size=64, runs=3, save='./save/', seq_in_len=12, seq_out_len=12, step_size1=2500, subgraph_size=20, tanhalpha=3, tolerance=100, weight_decay=0.0001)
+Number of model parameters is 199441
+start training...
+Epoch: 001, Inference Time: 10.1113 secs
+Epoch: 001, Train Loss: 2.7990, Train MAPE: 0.0688, Train RMSE: 4.8803, Valid Loss: 7.5965, Valid MAPE: 0.1772, Valid RMSE: 10.1857, Training Time: 96.9068/epoch
+Epoch: 011, Inference Time: 10.0298 secs
+Epoch: 011, Train Loss: 2.2144, Train MAPE: 0.0517, Train RMSE: 3.8673, Valid Loss: 4.9049, Valid MAPE: 0.1558, Valid RMSE: 7.9472, Training Time: 103.4655/epoch
+Epoch: 021, Inference Time: 10.5260 secs
+Epoch: 021, Train Loss: 2.1511, Train MAPE: 0.0496, Train RMSE: 3.7282, Valid Loss: 3.1796, Valid MAPE: 0.0856, Valid RMSE: 6.1094, Training Time: 119.7789/epoch
+Epoch: 031, Inference Time: 9.9224 secs
+Epoch: 031, Train Loss: 2.1036, Train MAPE: 0.0481, Train RMSE: 3.6284, Valid Loss: 2.9019, Valid MAPE: 0.0792, Valid RMSE: 5.7065, Training Time: 122.4625/epoch
+Epoch: 041, Inference Time: 9.9512 secs
+Epoch: 041, Train Loss: 2.0473, Train MAPE: 0.0466, Train RMSE: 3.5318, Valid Loss: 2.8503, Valid MAPE: 0.0795, Valid RMSE: 5.6592, Training Time: 139.5762/epoch
+Epoch: 051, Inference Time: 10.1823 secs
+Epoch: 051, Train Loss: 2.0286, Train MAPE: 0.0461, Train RMSE: 3.5039, Valid Loss: 2.8356, Valid MAPE: 0.0839, Valid RMSE: 5.5907, Training Time: 147.0803/epoch
+Epoch: 061, Inference Time: 10.2762 secs
+Epoch: 061, Train Loss: 2.0288, Train MAPE: 0.0461, Train RMSE: 3.5149, Valid Loss: 2.8998, Valid MAPE: 0.0820, Valid RMSE: 5.7203, Training Time: 161.1950/epoch
+Epoch: 071, Inference Time: 10.3693 secs
+Epoch: 071, Train Loss: 2.0583, Train MAPE: 0.0471, Train RMSE: 3.5985, Valid Loss: 2.7384, Valid MAPE: 0.0740, Valid RMSE: 5.4438, Training Time: 205.9383/epoch
+Epoch: 081, Inference Time: 10.3845 secs
+Epoch: 081, Train Loss: 2.1190, Train MAPE: 0.0491, Train RMSE: 3.7660, Valid Loss: 2.7632, Valid MAPE: 0.0754, Valid RMSE: 5.4380, Training Time: 176.2048/epoch
+Epoch: 091, Inference Time: 9.9586 secs
+Epoch: 091, Train Loss: 2.2439, Train MAPE: 0.0535, Train RMSE: 4.1143, Valid Loss: 2.8474, Valid MAPE: 0.0875, Valid RMSE: 5.5132, Training Time: 172.2514/epoch
+Epoch: 101, Inference Time: 9.9595 secs
+Epoch: 101, Train Loss: 2.4059, Train MAPE: 0.0593, Train RMSE: 4.5740, Valid Loss: 2.7039, Valid MAPE: 0.0726, Valid RMSE: 5.3698, Training Time: 171.5147/epoch
+Average Training Time: 149.1802 secs/epoch
+Average Inference Time: 10.3372 secs
+Training finished
+The valid loss on best model is 2.6914, epoch:104
+Evaluate best model on test data for horizon 3, Test MAE: 2.6223, Test MAPE: 0.0665, Test RMSE: 5.0167
+Evaluate best model on test data for horizon 6, Test MAE: 3.0044, Test MAPE: 0.0808, Test RMSE: 6.0699
+Evaluate best model on test data for horizon 9, Test MAE: 3.2625, Test MAPE: 0.0901, Test RMSE: 6.7521
+Evaluate best model on test data for horizon 12, Test MAE: 3.4507, Test MAPE: 0.0964, Test RMSE: 7.2070
+
+
+Results for 3 runs
+
+
+valid   MAE     RMSE    MAPE
+mean:   2.7197  5.7130  0.0738
+std:    0.0043  0.0224  0.0013
+
+
+
+test|horizon    MAE-mean        RMSE-mean       MAPE-mean       MAE-std RMSE-std        MAPE-std
+3       2.6230  5.0397  0.0667  0.0019  0.0171  0.0005
+6       2.9996  6.0963  0.0807  0.0057  0.0279  0.0014
+9       3.2606  6.7858  0.0900  0.0039  0.0362  0.0022
+12      3.4631  7.2810  0.0965  0.0090  0.0573  0.0029
