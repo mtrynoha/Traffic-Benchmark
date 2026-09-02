@@ -1,0 +1,34 @@
+Loaded: save/agcrn_metrla_run0.pth
+Train:  (23974, 12, 207, 2) (23974, 12, 207, 2)
+Val:  (3425, 12, 207, 2) (3425, 12, 207, 2)
+Test:  (6850, 12, 207, 2) (6850, 12, 207, 2)
+  evaluating: original (learned)...
+  evaluating: zeros...
+  evaluating: identity...
+  evaluating: random (renorm)...
+  evaluating: permuted nodes...
+  evaluating: uniform (fully conn.)...
+
+Learned-graph variant      MAE@15m   MAE@30m   MAE@60m    dMAE@15m    dMAE@30m    dMAE@60m
+--------------------------------------------------------------------------------------------
+original (learned)          2.8748    3.2388    3.6382         ---         ---         ---
+zeros                       4.1796    4.9941    6.0911     +1.3048     +1.7553     +2.4529
+identity                    5.6949    6.3361    7.4114     +2.8201     +3.0973     +3.7732
+random (renorm)             2.9685    3.3944    3.8417     +0.0938     +0.1556     +0.2035
+permuted nodes              2.8890    3.2606    3.6594     +0.0143     +0.0219     +0.0212
+uniform (fully conn.)       2.8928    3.2665    3.6621     +0.0180     +0.0277     +0.0239
+
+Note: AGCRN has NO predefined graph; perturbations above corrupt its LEARNED graph S=softmax(relu(EE^T)).
+
+[AGCRN] operational perturbations on learned graph (mean over 3 seeds)
+mode             rate | dMAE@3  dMAE@6  dMAE@12
+----------------------------------------------------
+edge_removal      10% | +0.005  +0.007  +0.009
+weight_noise      10% | +0.001  +0.001  +0.002
+edge_removal      20% | +0.011  +0.018  +0.023
+weight_noise      20% | +0.002  +0.003  +0.005
+edge_removal      30% | +0.019  +0.031  +0.039
+weight_noise      30% | +0.004  +0.007  +0.010
+
+saved: results_agcrn_operational_metrla.csv
+Note: targeted-betweenness N/A -- learned graph is dense (softmax), no edge bottlenecks to attack.

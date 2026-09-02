@@ -6,10 +6,7 @@ from util import *
 from trainer import Trainer
 
 from net import DGCRN
-import setproctitle
 import os
-
-setproctitle.setproctitle("DGCRN@lifuxian")
 
 
 def str_to_bool(value):

@@ -24,7 +24,7 @@ DATASET = 'METR-LA'
 
 MODEL = 'AGCRN'
 
-config_file = './{}_{}.conf'.format(DATASET, MODEL)
+config_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), '{}_{}.conf'.format(DATASET, MODEL))
 
 config = configparser.ConfigParser()
 config.read(config_file)

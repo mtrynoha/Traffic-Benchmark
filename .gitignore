@@ -1,0 +1,30 @@
+# ── Data (huge + redistribution of CC BY-NC-SA datasets) ──────────────
+data/
+*.h5
+*.npz
+
+# ── Model checkpoints / weights (huge binaries) ───────────────────────
+garage/
+save/
+models/
+*.pth
+*.tar
+
+# ── Prediction dumps ──────────────────────────────────────────────────
+*.npy
+
+# ── Raw run output / scratch (curated copies live in RESULTS/) ─────────
+experiments/
+logs/
+/results_*.csv
+
+# ── Python cache ──────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ── OS / editor cruft ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# NOTE: RESULTS/ (curated logs + CSVs) is intentionally NOT ignored.

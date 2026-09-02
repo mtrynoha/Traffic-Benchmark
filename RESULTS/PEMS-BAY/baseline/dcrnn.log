@@ -1,0 +1,226 @@
+﻿=== DCRNN PEMS-BAY 09.06.2026 18:08:18 ===
+=== Run 0 / test (preserved) ===
+2026-06-09 18:08:24,459 - INFO - Log directory: data/model\dcrnn_DR_2_h_12_64-64_lr_0.01_bs_64_0609180824/
+2026-06-09 18:08:47,014 - INFO - Model created
+2026-06-09 18:08:49,553 - INFO - Loaded model successfully!
+Evaluate best model on test data for horizon 1, Test MAE: 0.9273, Test MAPE: 0.0182, Test RMSE: 1.6453
+Evaluate best model on test data for horizon 2, Test MAE: 1.1682, Test MAPE: 0.0240, Test RMSE: 2.3009
+Evaluate best model on test data for horizon 3, Test MAE: 1.3498, Test MAPE: 0.0287, Test RMSE: 2.8418
+Evaluate best model on test data for horizon 4, Test MAE: 1.4880, Test MAPE: 0.0326, Test RMSE: 3.2689
+Evaluate best model on test data for horizon 5, Test MAE: 1.5951, Test MAPE: 0.0358, Test RMSE: 3.5971
+Evaluate best model on test data for horizon 6, Test MAE: 1.6812, Test MAPE: 0.0384, Test RMSE: 3.8526
+Evaluate best model on test data for horizon 7, Test MAE: 1.7533, Test MAPE: 0.0406, Test RMSE: 4.0585
+Evaluate best model on test data for horizon 8, Test MAE: 1.8130, Test MAPE: 0.0425, Test RMSE: 4.2217
+Evaluate best model on test data for horizon 9, Test MAE: 1.8650, Test MAPE: 0.0441, Test RMSE: 4.3561
+Evaluate best model on test data for horizon 10, Test MAE: 1.9105, Test MAPE: 0.0455, Test RMSE: 4.4663
+Evaluate best model on test data for horizon 11, Test MAE: 1.9520, Test MAPE: 0.0467, Test RMSE: 4.5626
+Evaluate best model on test data for horizon 12, Test MAE: 1.9908, Test MAPE: 0.0478, Test RMSE: 4.6486
+=== Run 1 / test (preserved) ===
+2026-06-09 18:10:40,472 - INFO - Log directory: data/model\dcrnn_DR_2_h_12_64-64_lr_0.01_bs_64_0609181040/
+2026-06-09 18:11:01,852 - INFO - Model created
+2026-06-09 18:11:04,390 - INFO - Loaded model successfully!
+Evaluate best model on test data for horizon 1, Test MAE: 0.9173, Test MAPE: 0.0181, Test RMSE: 1.6227
+Evaluate best model on test data for horizon 2, Test MAE: 1.1589, Test MAPE: 0.0237, Test RMSE: 2.2803
+Evaluate best model on test data for horizon 3, Test MAE: 1.3379, Test MAPE: 0.0282, Test RMSE: 2.8164
+Evaluate best model on test data for horizon 4, Test MAE: 1.4739, Test MAPE: 0.0319, Test RMSE: 3.2364
+Evaluate best model on test data for horizon 5, Test MAE: 1.5796, Test MAPE: 0.0349, Test RMSE: 3.5597
+Evaluate best model on test data for horizon 6, Test MAE: 1.6647, Test MAPE: 0.0373, Test RMSE: 3.8101
+Evaluate best model on test data for horizon 7, Test MAE: 1.7348, Test MAPE: 0.0394, Test RMSE: 4.0096
+Evaluate best model on test data for horizon 8, Test MAE: 1.7930, Test MAPE: 0.0412, Test RMSE: 4.1679
+Evaluate best model on test data for horizon 9, Test MAE: 1.8438, Test MAPE: 0.0427, Test RMSE: 4.3008
+Evaluate best model on test data for horizon 10, Test MAE: 1.8878, Test MAPE: 0.0440, Test RMSE: 4.4110
+Evaluate best model on test data for horizon 11, Test MAE: 1.9277, Test MAPE: 0.0452, Test RMSE: 4.5068
+Evaluate best model on test data for horizon 12, Test MAE: 1.9657, Test MAPE: 0.0463, Test RMSE: 4.5932
+=== Run 2 / train ===
+2026-06-09 18:12:55,076 - INFO - Log directory: data/model\dcrnn_DR_2_h_12_64-64_lr_0.01_bs_64_0609181255/
+2026-06-09 18:13:15,179 - INFO - Model created
+2026-06-09 18:13:15,179 - INFO - Start training ...
+2026-06-09 18:13:15,179 - INFO - num_batches:570
+2026-06-09 18:13:18,046 - INFO - Total trainable parameters 372353
+2026-06-09 18:25:38,589 - INFO - epoch complete
+2026-06-09 18:25:38,605 - INFO - evaluating now!
+2026-06-09 18:26:33,102 - INFO - Epoch [0/1000] (570) train_mae: 1.0122, val_mae: 2.5797, lr: 0.010000, 797.9s
+2026-06-09 18:26:33,113 - INFO - Saved model at 0
+2026-06-09 18:26:33,113 - INFO - Val loss decrease from inf to 2.5797, saving to models/bay_best.tar
+2026-06-09 18:38:54,855 - INFO - epoch complete
+2026-06-09 18:38:54,855 - INFO - evaluating now!
+2026-06-09 18:39:49,310 - INFO - Epoch [1/1000] (1140) train_mae: 0.8644, val_mae: 2.5079, lr: 0.010000, 796.2s
+2026-06-09 18:39:49,314 - INFO - Saved model at 1
+2026-06-09 18:39:49,314 - INFO - Val loss decrease from 2.5797 to 2.5079, saving to models/bay_best.tar
+2026-06-09 18:52:10,937 - INFO - epoch complete
+2026-06-09 18:52:10,941 - INFO - evaluating now!
+2026-06-09 18:53:05,336 - INFO - Epoch [2/1000] (1710) train_mae: 0.8537, val_mae: 2.1971, lr: 0.010000, 796.0s
+2026-06-09 18:53:05,340 - INFO - Saved model at 2
+2026-06-09 18:53:05,340 - INFO - Val loss decrease from 2.5079 to 2.1971, saving to models/bay_best.tar
+2026-06-09 19:05:27,106 - INFO - epoch complete
+2026-06-09 19:05:27,107 - INFO - evaluating now!
+2026-06-09 19:06:21,569 - INFO - Epoch [3/1000] (2280) train_mae: 0.8433, val_mae: 1.9907, lr: 0.010000, 796.2s
+2026-06-09 19:06:21,573 - INFO - Saved model at 3
+2026-06-09 19:06:21,573 - INFO - Val loss decrease from 2.1971 to 1.9907, saving to models/bay_best.tar
+2026-06-09 19:18:43,250 - INFO - epoch complete
+2026-06-09 19:18:43,250 - INFO - evaluating now!
+2026-06-09 19:19:37,680 - INFO - Epoch [4/1000] (2850) train_mae: 0.8359, val_mae: 2.0303, lr: 0.010000, 796.1s
+2026-06-09 19:32:00,291 - INFO - epoch complete
+2026-06-09 19:32:00,291 - INFO - evaluating now!
+2026-06-09 19:32:54,703 - INFO - Epoch [5/1000] (3420) train_mae: 0.8321, val_mae: 2.4393, lr: 0.010000, 797.0s
+2026-06-09 19:45:16,576 - INFO - epoch complete
+2026-06-09 19:45:16,576 - INFO - evaluating now!
+2026-06-09 19:46:11,030 - INFO - Epoch [6/1000] (3990) train_mae: 0.8273, val_mae: 1.9363, lr: 0.010000, 796.3s
+2026-06-09 19:46:11,034 - INFO - Saved model at 6
+2026-06-09 19:46:11,034 - INFO - Val loss decrease from 1.9907 to 1.9363, saving to models/bay_best.tar
+2026-06-09 19:58:32,640 - INFO - epoch complete
+2026-06-09 19:58:32,640 - INFO - evaluating now!
+2026-06-09 19:59:27,139 - INFO - Epoch [7/1000] (4560) train_mae: 0.8239, val_mae: 2.0866, lr: 0.010000, 796.1s
+2026-06-09 20:11:49,142 - INFO - epoch complete
+2026-06-09 20:11:49,146 - INFO - evaluating now!
+2026-06-09 20:12:43,620 - INFO - Epoch [8/1000] (5130) train_mae: 0.8203, val_mae: 1.9721, lr: 0.010000, 796.5s
+2026-06-09 20:25:04,974 - INFO - epoch complete
+2026-06-09 20:25:04,974 - INFO - evaluating now!
+2026-06-09 20:25:59,366 - INFO - Epoch [9/1000] (5700) train_mae: 0.8181, val_mae: 2.0555, lr: 0.010000, 795.7s
+2026-06-09 20:38:20,803 - INFO - epoch complete
+2026-06-09 20:38:20,803 - INFO - evaluating now!
+2026-06-09 20:39:15,261 - INFO - Epoch [10/1000] (6270) train_mae: 0.8168, val_mae: 2.0205, lr: 0.010000, 795.9s
+2026-06-09 20:51:39,813 - INFO - epoch complete
+2026-06-09 20:51:39,813 - INFO - evaluating now!
+2026-06-09 20:52:34,271 - INFO - Epoch [11/1000] (6840) train_mae: 0.8155, val_mae: 1.9548, lr: 0.010000, 799.0s
+2026-06-09 21:04:55,737 - INFO - epoch complete
+2026-06-09 21:04:55,737 - INFO - evaluating now!
+2026-06-09 21:05:50,108 - INFO - Epoch [12/1000] (7410) train_mae: 0.8148, val_mae: 2.0213, lr: 0.010000, 795.8s
+2026-06-09 21:18:11,759 - INFO - epoch complete
+2026-06-09 21:18:11,764 - INFO - evaluating now!
+2026-06-09 21:19:06,209 - INFO - Epoch [13/1000] (7980) train_mae: 0.8133, val_mae: 1.9087, lr: 0.010000, 796.1s
+2026-06-09 21:19:06,213 - INFO - Saved model at 13
+2026-06-09 21:19:06,213 - INFO - Val loss decrease from 1.9363 to 1.9087, saving to models/bay_best.tar
+2026-06-09 21:31:27,811 - INFO - epoch complete
+2026-06-09 21:31:27,812 - INFO - evaluating now!
+2026-06-09 21:32:22,218 - INFO - Epoch [14/1000] (8550) train_mae: 0.8152, val_mae: 2.1149, lr: 0.010000, 796.0s
+2026-06-09 21:44:44,657 - INFO - epoch complete
+2026-06-09 21:44:44,658 - INFO - evaluating now!
+2026-06-09 21:45:39,122 - INFO - Epoch [15/1000] (9120) train_mae: 0.8158, val_mae: 1.9530, lr: 0.010000, 796.9s
+2026-06-09 21:58:00,929 - INFO - epoch complete
+2026-06-09 21:58:00,929 - INFO - evaluating now!
+2026-06-09 21:58:55,343 - INFO - Epoch [16/1000] (9690) train_mae: 0.8206, val_mae: 1.7716, lr: 0.010000, 796.2s
+2026-06-09 21:58:55,347 - INFO - Saved model at 16
+2026-06-09 21:58:55,347 - INFO - Val loss decrease from 1.9087 to 1.7716, saving to models/bay_best.tar
+2026-06-09 22:11:17,302 - INFO - epoch complete
+2026-06-09 22:11:17,302 - INFO - evaluating now!
+2026-06-09 22:12:11,756 - INFO - Epoch [17/1000] (10260) train_mae: 0.8200, val_mae: 1.7983, lr: 0.010000, 796.4s
+2026-06-09 22:24:33,363 - INFO - epoch complete
+2026-06-09 22:24:33,363 - INFO - evaluating now!
+2026-06-09 22:25:27,800 - INFO - Epoch [18/1000] (10830) train_mae: 0.8309, val_mae: 1.8318, lr: 0.010000, 796.0s
+2026-06-09 22:37:51,880 - INFO - epoch complete
+2026-06-09 22:37:51,880 - INFO - evaluating now!
+2026-06-09 22:38:46,437 - INFO - Epoch [19/1000] (11400) train_mae: 0.8377, val_mae: 1.7816, lr: 0.000100, 798.6s
+2026-06-09 22:51:09,697 - INFO - epoch complete
+2026-06-09 22:51:09,697 - INFO - evaluating now!
+2026-06-09 22:52:04,270 - INFO - Epoch [20/1000] (11970) train_mae: 0.8497, val_mae: 1.7532, lr: 0.001000, 797.8s
+2026-06-09 22:52:04,274 - INFO - Saved model at 20
+2026-06-09 22:52:04,274 - INFO - Val loss decrease from 1.7716 to 1.7532, saving to models/bay_best.tar
+2026-06-09 23:04:27,713 - INFO - epoch complete
+2026-06-09 23:04:27,713 - INFO - evaluating now!
+2026-06-09 23:05:22,270 - INFO - Epoch [21/1000] (12540) train_mae: 0.8626, val_mae: 1.8359, lr: 0.001000, 798.0s
+2026-06-09 23:17:45,294 - INFO - epoch complete
+2026-06-09 23:17:45,294 - INFO - evaluating now!
+2026-06-09 23:18:39,815 - INFO - Epoch [22/1000] (13110) train_mae: 0.8760, val_mae: 1.9757, lr: 0.001000, 797.5s
+2026-06-09 23:31:03,047 - INFO - epoch complete
+2026-06-09 23:31:03,047 - INFO - evaluating now!
+2026-06-09 23:31:57,577 - INFO - Epoch [23/1000] (13680) train_mae: 0.9106, val_mae: 1.9324, lr: 0.001000, 797.8s
+2026-06-09 23:44:20,750 - INFO - epoch complete
+2026-06-09 23:44:20,750 - INFO - evaluating now!
+2026-06-09 23:45:15,238 - INFO - Epoch [24/1000] (14250) train_mae: 0.9393, val_mae: 1.8437, lr: 0.001000, 797.7s
+2026-06-09 23:57:38,379 - INFO - epoch complete
+2026-06-09 23:57:38,380 - INFO - evaluating now!
+2026-06-09 23:58:32,925 - INFO - Epoch [25/1000] (14820) train_mae: 0.9657, val_mae: 1.9807, lr: 0.001000, 797.7s
+2026-06-10 00:10:56,283 - INFO - epoch complete
+2026-06-10 00:10:56,283 - INFO - evaluating now!
+2026-06-10 00:11:50,812 - INFO - Epoch [26/1000] (15390) train_mae: 1.0086, val_mae: 1.7365, lr: 0.001000, 797.9s
+2026-06-10 00:11:50,816 - INFO - Saved model at 26
+2026-06-10 00:11:50,816 - INFO - Val loss decrease from 1.7532 to 1.7365, saving to models/bay_best.tar
+2026-06-10 00:24:12,334 - INFO - epoch complete
+2026-06-10 00:24:12,334 - INFO - evaluating now!
+2026-06-10 00:25:06,742 - INFO - Epoch [27/1000] (15960) train_mae: 1.0525, val_mae: 1.8172, lr: 0.001000, 795.9s
+2026-06-10 00:37:28,423 - INFO - epoch complete
+2026-06-10 00:37:28,424 - INFO - evaluating now!
+2026-06-10 00:38:22,894 - INFO - Epoch [28/1000] (16530) train_mae: 1.1193, val_mae: 1.7640, lr: 0.001000, 796.2s
+2026-06-10 00:50:44,779 - INFO - epoch complete
+2026-06-10 00:50:44,779 - INFO - evaluating now!
+2026-06-10 00:51:39,240 - INFO - Epoch [29/1000] (17100) train_mae: 1.1603, val_mae: 1.7241, lr: 0.000010, 796.3s
+2026-06-10 00:51:39,247 - INFO - Saved model at 29
+2026-06-10 00:51:39,247 - INFO - Val loss decrease from 1.7365 to 1.7241, saving to models/bay_best.tar
+2026-06-10 01:04:01,125 - INFO - epoch complete
+2026-06-10 01:04:01,125 - INFO - evaluating now!
+2026-06-10 01:04:55,573 - INFO - Epoch [30/1000] (17670) train_mae: 1.2032, val_mae: 1.7450, lr: 0.000100, 796.3s
+2026-06-10 01:17:17,524 - INFO - epoch complete
+2026-06-10 01:17:17,524 - INFO - evaluating now!
+2026-06-10 01:18:11,908 - INFO - Epoch [31/1000] (18240) train_mae: 1.2472, val_mae: 1.7128, lr: 0.000100, 796.3s
+2026-06-10 01:18:11,911 - INFO - Saved model at 31
+2026-06-10 01:18:11,911 - INFO - Val loss decrease from 1.7241 to 1.7128, saving to models/bay_best.tar
+2026-06-10 01:30:33,725 - INFO - epoch complete
+2026-06-10 01:30:33,725 - INFO - evaluating now!
+2026-06-10 01:31:28,182 - INFO - Epoch [32/1000] (18810) train_mae: 1.2879, val_mae: 1.7440, lr: 0.000100, 796.3s
+2026-06-10 01:43:50,196 - INFO - epoch complete
+2026-06-10 01:43:50,200 - INFO - evaluating now!
+2026-06-10 01:44:44,695 - INFO - Epoch [33/1000] (19380) train_mae: 1.3201, val_mae: 1.6640, lr: 0.000100, 796.5s
+2026-06-10 01:44:44,701 - INFO - Saved model at 33
+2026-06-10 01:44:44,701 - INFO - Val loss decrease from 1.7128 to 1.6640, saving to models/bay_best.tar
+2026-06-10 01:57:06,666 - INFO - epoch complete
+2026-06-10 01:57:06,666 - INFO - evaluating now!
+2026-06-10 01:58:01,139 - INFO - Epoch [34/1000] (19950) train_mae: 1.3423, val_mae: 1.6865, lr: 0.000100, 796.4s
+2026-06-10 02:10:22,862 - INFO - epoch complete
+2026-06-10 02:10:22,864 - INFO - evaluating now!
+2026-06-10 02:11:17,348 - INFO - Epoch [35/1000] (20520) train_mae: 1.3670, val_mae: 1.6723, lr: 0.000100, 796.2s
+2026-06-10 02:23:39,358 - INFO - epoch complete
+2026-06-10 02:23:39,362 - INFO - evaluating now!
+2026-06-10 02:24:33,817 - INFO - Epoch [36/1000] (21090) train_mae: 1.3749, val_mae: 1.6365, lr: 0.000100, 796.5s
+2026-06-10 02:24:33,821 - INFO - Saved model at 36
+2026-06-10 02:24:33,821 - INFO - Val loss decrease from 1.6640 to 1.6365, saving to models/bay_best.tar
+2026-06-10 02:37:10,793 - INFO - epoch complete
+2026-06-10 02:37:10,796 - INFO - evaluating now!
+2026-06-10 02:38:05,258 - INFO - Epoch [37/1000] (21660) train_mae: 1.3830, val_mae: 1.6812, lr: 0.000100, 811.4s
+2026-06-10 02:50:26,145 - INFO - epoch complete
+2026-06-10 02:50:26,150 - INFO - evaluating now!
+2026-06-10 02:51:20,654 - INFO - Epoch [38/1000] (22230) train_mae: 1.3823, val_mae: 1.6564, lr: 0.000100, 795.4s
+2026-06-10 03:03:41,121 - INFO - epoch complete
+2026-06-10 03:03:41,126 - INFO - evaluating now!
+2026-06-10 03:04:35,546 - INFO - Epoch [39/1000] (22800) train_mae: 1.3876, val_mae: 1.6469, lr: 0.000001, 794.9s
+2026-06-10 03:16:55,977 - INFO - epoch complete
+2026-06-10 03:16:55,989 - INFO - evaluating now!
+2026-06-10 03:17:50,438 - INFO - Epoch [40/1000] (23370) train_mae: 1.3888, val_mae: 1.6421, lr: 0.000010, 794.9s
+2026-06-10 03:30:10,888 - INFO - epoch complete
+2026-06-10 03:30:10,888 - INFO - evaluating now!
+2026-06-10 03:31:05,350 - INFO - Epoch [41/1000] (23940) train_mae: 1.3884, val_mae: 1.6709, lr: 0.000010, 794.9s
+2026-06-10 03:43:25,441 - INFO - epoch complete
+2026-06-10 03:43:25,442 - INFO - evaluating now!
+2026-06-10 03:44:19,861 - INFO - Epoch [42/1000] (24510) train_mae: 1.3956, val_mae: 1.6379, lr: 0.000010, 794.5s
+2026-06-10 03:56:40,761 - INFO - epoch complete
+2026-06-10 03:56:40,761 - INFO - evaluating now!
+2026-06-10 03:57:35,230 - INFO - Epoch [43/1000] (25080) train_mae: 1.3773, val_mae: 1.6569, lr: 0.000010, 795.4s
+2026-06-10 04:09:56,071 - INFO - epoch complete
+2026-06-10 04:09:56,071 - INFO - evaluating now!
+2026-06-10 04:10:50,518 - INFO - Epoch [44/1000] (25650) train_mae: 1.3741, val_mae: 1.6373, lr: 0.000010, 795.3s
+2026-06-10 04:23:10,881 - INFO - epoch complete
+2026-06-10 04:23:10,881 - INFO - evaluating now!
+2026-06-10 04:24:05,441 - INFO - Epoch [45/1000] (26220) train_mae: 1.3700, val_mae: 1.6409, lr: 0.000010, 794.9s
+2026-06-10 04:36:25,814 - INFO - epoch complete
+2026-06-10 04:36:25,822 - INFO - evaluating now!
+2026-06-10 04:37:20,278 - INFO - Epoch [46/1000] (26790) train_mae: 1.3659, val_mae: 1.6431, lr: 0.000010, 794.8s
+2026-06-10 04:49:39,137 - INFO - epoch complete
+2026-06-10 04:49:39,149 - INFO - evaluating now!
+2026-06-10 04:50:33,523 - INFO - Epoch [47/1000] (27360) train_mae: 1.3642, val_mae: 1.6377, lr: 0.000010, 793.2s
+
+=== Run 2 / test (converged before sleep, epoch ~37) ===
+2026-06-10 08:28:34,930 - INFO - Log directory: data/model\dcrnn_DR_2_h_12_64-64_lr_0.01_bs_64_0610082834/
+2026-06-10 08:28:51,522 - INFO - Model created
+2026-06-10 08:28:54,170 - INFO - Loaded model successfully!
+Evaluate best model on test data for horizon 1, Test MAE: 0.8962, Test MAPE: 0.0176, Test RMSE: 1.6040
+Evaluate best model on test data for horizon 2, Test MAE: 1.1491, Test MAPE: 0.0235, Test RMSE: 2.2620
+Evaluate best model on test data for horizon 3, Test MAE: 1.3320, Test MAPE: 0.0282, Test RMSE: 2.7919
+Evaluate best model on test data for horizon 4, Test MAE: 1.4694, Test MAPE: 0.0319, Test RMSE: 3.2052
+Evaluate best model on test data for horizon 5, Test MAE: 1.5751, Test MAPE: 0.0350, Test RMSE: 3.5256
+Evaluate best model on test data for horizon 6, Test MAE: 1.6607, Test MAPE: 0.0375, Test RMSE: 3.7743
+Evaluate best model on test data for horizon 7, Test MAE: 1.7311, Test MAPE: 0.0396, Test RMSE: 3.9717
+Evaluate best model on test data for horizon 8, Test MAE: 1.7903, Test MAPE: 0.0414, Test RMSE: 4.1307
+Evaluate best model on test data for horizon 9, Test MAE: 1.8416, Test MAPE: 0.0429, Test RMSE: 4.2625
+Evaluate best model on test data for horizon 10, Test MAE: 1.8871, Test MAPE: 0.0443, Test RMSE: 4.3750
+Evaluate best model on test data for horizon 11, Test MAE: 1.9286, Test MAPE: 0.0455, Test RMSE: 4.4737
+Evaluate best model on test data for horizon 12, Test MAE: 1.9687, Test MAPE: 0.0466, Test RMSE: 4.5642

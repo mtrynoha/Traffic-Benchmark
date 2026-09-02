@@ -1,0 +1,43 @@
+methods\DGCRN\util.py:218: RuntimeWarning: divide by zero encountered in power
+  d_inv = np.power(rowsum, -1).flatten()
+methods\DGCRN\net.py:262: UserWarning: nn.init.orthogonal is now deprecated in favor of nn.init.orthogonal_.
+  nn.init.orthogonal(Hidden_State)
+methods\DGCRN\net.py:263: UserWarning: nn.init.orthogonal is now deprecated in favor of nn.init.orthogonal_.
+  nn.init.orthogonal(Cell_State)
+C:\Users\tryno\.pyenv\pyenv-win\versions\3.6.8\lib\site-packages\torch\nn\functional.py:1806: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+C:\Users\tryno\.pyenv\pyenv-win\versions\3.6.8\lib\site-packages\torch\nn\functional.py:1795: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+Loaded: save/expDGCRN_pemsbay_0.pth
+  evaluating: original...
+  evaluating: zeros...
+  evaluating: identity...
+  evaluating: random (same density)...
+  evaluating: permuted nodes...
+  evaluating: fully connected...
+
+Adj variant                  MAE@15m   MAE@30m   MAE@60m    dMAE@15m    dMAE@30m    dMAE@60m
+----------------------------------------------------------------------------------------------
+original                      1.3036    1.6275    1.9168         ---         ---         ---
+zeros                         1.7173    2.5006    3.6803     +0.4137     +0.8731     +1.7635
+identity                      1.4845    1.9668    2.5992     +0.1809     +0.3393     +0.6824
+random (same density)         1.5947    2.2075    2.9360     +0.2912     +0.5801     +1.0193
+permuted nodes                1.5324    2.0872    2.7773     +0.2288     +0.4597     +0.8605
+fully connected               1.5551    2.0937    2.7302     +0.2515     +0.4663     +0.8134
+
+Note: adaptive graph (emb1/emb2 hyper-GNN) stays frozen -- deltas show predefined_A contribution.
+
+[DGCRN] operational + targeted perturbations
+mode                    rate | dMAE@3  dMAE@6  dMAE@12
+------------------------------------------------------
+edge_removal             10% |  +0.014   +0.026   +0.050
+edge_removal             20% |  +0.032   +0.060   +0.111
+edge_removal             30% |  +0.045   +0.087   +0.161
+weight_noise             10% |  +0.001   +0.002   +0.004
+weight_noise             20% |  +0.005   +0.009   +0.016
+weight_noise             30% |  +0.010   +0.019   +0.035
+targeted_betweenness     10% |  +0.021   +0.043   +0.085
+targeted_betweenness     20% |  +0.039   +0.077   +0.149
+targeted_betweenness     30% |  +0.055   +0.103   +0.192
+
+saved: results_dgcrn_operational.csv

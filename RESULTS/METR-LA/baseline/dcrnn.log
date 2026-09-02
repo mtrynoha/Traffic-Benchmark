@@ -1,0 +1,356 @@
+(venv-torch) PS C:\Documents\code\Traffic-Benchmark_Fork> python train_benchmark.py --model DCRNN --data METR-LA
+2026-05-22 20:19:03,057 - INFO - Log directory: data/model\dcrnn_DR_2_h_12_64-64_lr_0.01_bs_64_0522201903/
+2026-05-22 20:19:10,160 - INFO - Model created
+2026-05-22 20:19:10,160 - INFO - Start training ...
+2026-05-22 20:19:10,160 - INFO - num_batches:375
+2026-05-22 20:19:12,829 - INFO - Total trainable parameters 372353
+2026-05-22 20:25:41,622 - INFO - epoch complete
+C:\Documents\code\venv-torch\lib\site-packages\torch\optim\lr_scheduler.py:134: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+2026-05-22 20:25:41,626 - INFO - evaluating now!
+C:\Documents\code\venv-torch\lib\site-packages\torch\optim\lr_scheduler.py:417: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  "please use `get_last_lr()`.", UserWarning)
+2026-05-22 20:26:10,490 - INFO - Epoch [0/1000] (375) train_mae: 2.6715, val_mae: 3.6460, lr: 0.010000, 420.3s
+2026-05-22 20:26:10,494 - INFO - Saved model at 0
+2026-05-22 20:26:10,494 - INFO - Val loss decrease from inf to 3.6460, saving to models/la_best.tar
+2026-05-22 20:32:48,351 - INFO - epoch complete
+2026-05-22 20:32:48,351 - INFO - evaluating now!
+2026-05-22 20:33:16,776 - INFO - Epoch [1/1000] (750) train_mae: 2.3219, val_mae: 3.2538, lr: 0.010000, 426.3s
+2026-05-22 20:33:16,780 - INFO - Saved model at 1
+2026-05-22 20:33:16,780 - INFO - Val loss decrease from 3.6460 to 3.2538, saving to models/la_best.tar
+2026-05-22 20:39:54,215 - INFO - epoch complete
+2026-05-22 20:39:54,215 - INFO - evaluating now!
+2026-05-22 20:40:22,829 - INFO - Epoch [2/1000] (1125) train_mae: 2.2544, val_mae: 3.1901, lr: 0.010000, 426.0s
+2026-05-22 20:40:22,833 - INFO - Saved model at 2
+2026-05-22 20:40:22,833 - INFO - Val loss decrease from 3.2538 to 3.1901, saving to models/la_best.tar
+2026-05-22 20:46:58,983 - INFO - epoch complete
+2026-05-22 20:46:58,983 - INFO - evaluating now!
+2026-05-22 20:47:27,687 - INFO - Epoch [3/1000] (1500) train_mae: 2.2118, val_mae: 3.0964, lr: 0.010000, 424.9s
+2026-05-22 20:47:27,687 - INFO - Saved model at 3
+2026-05-22 20:47:27,687 - INFO - Val loss decrease from 3.1901 to 3.0964, saving to models/la_best.tar
+2026-05-22 20:54:03,268 - INFO - epoch complete
+2026-05-22 20:54:03,268 - INFO - evaluating now!
+2026-05-22 20:54:31,969 - INFO - Epoch [4/1000] (1875) train_mae: 2.1895, val_mae: 3.0402, lr: 0.010000, 424.3s
+2026-05-22 20:54:31,974 - INFO - Saved model at 4
+2026-05-22 20:54:31,974 - INFO - Val loss decrease from 3.0964 to 3.0402, saving to models/la_best.tar
+2026-05-22 21:01:07,856 - INFO - epoch complete
+2026-05-22 21:01:07,856 - INFO - evaluating now!
+2026-05-22 21:01:36,799 - INFO - Epoch [5/1000] (2250) train_mae: 2.1614, val_mae: 3.0168, lr: 0.010000, 424.8s
+2026-05-22 21:01:36,803 - INFO - Saved model at 5
+2026-05-22 21:01:36,803 - INFO - Val loss decrease from 3.0402 to 3.0168, saving to models/la_best.tar
+2026-05-22 21:08:13,154 - INFO - epoch complete
+2026-05-22 21:08:13,158 - INFO - evaluating now!
+2026-05-22 21:08:41,918 - INFO - Epoch [6/1000] (2625) train_mae: 2.1414, val_mae: 2.9917, lr: 0.010000, 425.1s
+2026-05-22 21:08:41,922 - INFO - Saved model at 6
+2026-05-22 21:08:41,922 - INFO - Val loss decrease from 3.0168 to 2.9917, saving to models/la_best.tar
+2026-05-22 21:15:16,071 - INFO - epoch complete
+2026-05-22 21:15:16,071 - INFO - evaluating now!
+2026-05-22 21:15:44,649 - INFO - Epoch [7/1000] (3000) train_mae: 2.1263, val_mae: 2.9419, lr: 0.010000, 422.7s
+2026-05-22 21:15:44,653 - INFO - Saved model at 7
+2026-05-22 21:15:44,653 - INFO - Val loss decrease from 2.9917 to 2.9419, saving to models/la_best.tar
+2026-05-22 21:22:15,381 - INFO - epoch complete
+2026-05-22 21:22:15,381 - INFO - evaluating now!
+2026-05-22 21:22:44,012 - INFO - Epoch [8/1000] (3375) train_mae: 2.1144, val_mae: 2.9487, lr: 0.010000, 419.4s
+2026-05-22 21:29:12,524 - INFO - epoch complete
+2026-05-22 21:29:12,525 - INFO - evaluating now!
+2026-05-22 21:29:42,087 - INFO - Epoch [9/1000] (3750) train_mae: 2.1030, val_mae: 2.9645, lr: 0.010000, 418.1s
+2026-05-22 21:36:11,032 - INFO - epoch complete
+2026-05-22 21:36:11,032 - INFO - evaluating now!
+2026-05-22 21:36:39,783 - INFO - Epoch [10/1000] (4125) train_mae: 2.0931, val_mae: 2.9492, lr: 0.010000, 417.7s
+2026-05-22 21:43:14,167 - INFO - epoch complete
+2026-05-22 21:43:14,168 - INFO - evaluating now!
+2026-05-22 21:43:43,927 - INFO - Epoch [11/1000] (4500) train_mae: 2.0828, val_mae: 2.9662, lr: 0.010000, 424.1s
+2026-05-22 21:50:28,663 - INFO - epoch complete
+2026-05-22 21:50:28,663 - INFO - evaluating now!
+2026-05-22 21:50:58,943 - INFO - Epoch [12/1000] (4875) train_mae: 2.0751, val_mae: 2.9069, lr: 0.010000, 435.0s
+2026-05-22 21:50:58,947 - INFO - Saved model at 12
+2026-05-22 21:50:58,947 - INFO - Val loss decrease from 2.9419 to 2.9069, saving to models/la_best.tar
+2026-05-22 21:57:56,317 - INFO - epoch complete
+2026-05-22 21:57:56,317 - INFO - evaluating now!
+2026-05-22 21:58:26,346 - INFO - Epoch [13/1000] (5250) train_mae: 2.0676, val_mae: 2.9707, lr: 0.010000, 447.4s
+2026-05-22 22:05:19,510 - INFO - epoch complete
+2026-05-22 22:05:19,510 - INFO - evaluating now!
+2026-05-22 22:05:47,663 - INFO - Epoch [14/1000] (5625) train_mae: 2.0616, val_mae: 3.0008, lr: 0.010000, 441.3s
+2026-05-22 22:12:08,230 - INFO - epoch complete
+2026-05-22 22:12:08,230 - INFO - evaluating now!
+2026-05-22 22:12:36,152 - INFO - Epoch [15/1000] (6000) train_mae: 2.0572, val_mae: 2.8952, lr: 0.010000, 408.5s
+2026-05-22 22:12:36,152 - INFO - Saved model at 15
+2026-05-22 22:12:36,156 - INFO - Val loss decrease from 2.9069 to 2.8952, saving to models/la_best.tar
+2026-05-22 22:18:55,160 - INFO - epoch complete
+2026-05-22 22:18:55,164 - INFO - evaluating now!
+2026-05-22 22:19:23,071 - INFO - Epoch [16/1000] (6375) train_mae: 2.0524, val_mae: 2.9167, lr: 0.010000, 406.9s
+2026-05-22 22:25:43,497 - INFO - epoch complete
+2026-05-22 22:25:43,497 - INFO - evaluating now!
+2026-05-22 22:26:11,489 - INFO - Epoch [17/1000] (6750) train_mae: 2.0446, val_mae: 2.8935, lr: 0.010000, 408.4s
+2026-05-22 22:26:11,494 - INFO - Saved model at 17
+2026-05-22 22:26:11,494 - INFO - Val loss decrease from 2.8952 to 2.8935, saving to models/la_best.tar
+2026-05-22 22:32:31,967 - INFO - epoch complete
+2026-05-22 22:32:31,967 - INFO - evaluating now!
+2026-05-22 22:32:59,927 - INFO - Epoch [18/1000] (7125) train_mae: 2.0446, val_mae: 2.9006, lr: 0.010000, 408.4s
+2026-05-22 22:39:20,231 - INFO - epoch complete
+2026-05-22 22:39:20,231 - INFO - evaluating now!
+2026-05-22 22:39:48,166 - INFO - Epoch [19/1000] (7500) train_mae: 2.0384, val_mae: 2.8866, lr: 0.000100, 408.2s
+2026-05-22 22:39:48,170 - INFO - Saved model at 19
+2026-05-22 22:39:48,170 - INFO - Val loss decrease from 2.8935 to 2.8866, saving to models/la_best.tar
+2026-05-22 22:46:07,853 - INFO - epoch complete
+2026-05-22 22:46:07,853 - INFO - evaluating now!
+2026-05-22 22:46:35,769 - INFO - Epoch [20/1000] (7875) train_mae: 2.0346, val_mae: 2.8959, lr: 0.001000, 407.6s
+2026-05-22 22:52:56,137 - INFO - epoch complete
+2026-05-22 22:52:56,137 - INFO - evaluating now!
+2026-05-22 22:53:24,059 - INFO - Epoch [21/1000] (8250) train_mae: 2.0327, val_mae: 2.8953, lr: 0.001000, 408.3s
+2026-05-22 22:59:44,589 - INFO - epoch complete
+2026-05-22 22:59:44,589 - INFO - evaluating now!
+2026-05-22 23:00:12,524 - INFO - Epoch [22/1000] (8625) train_mae: 2.0300, val_mae: 2.8907, lr: 0.001000, 408.5s
+2026-05-22 23:06:32,960 - INFO - epoch complete
+2026-05-22 23:06:32,960 - INFO - evaluating now!
+2026-05-22 23:07:00,905 - INFO - Epoch [23/1000] (9000) train_mae: 2.0360, val_mae: 2.9921, lr: 0.001000, 408.4s
+2026-05-22 23:13:21,448 - INFO - epoch complete
+2026-05-22 23:13:21,448 - INFO - evaluating now!
+2026-05-22 23:13:49,388 - INFO - Epoch [24/1000] (9375) train_mae: 2.0353, val_mae: 2.8726, lr: 0.001000, 408.5s
+2026-05-22 23:13:49,388 - INFO - Saved model at 24
+2026-05-22 23:13:49,393 - INFO - Val loss decrease from 2.8866 to 2.8726, saving to models/la_best.tar
+2026-05-22 23:20:09,119 - INFO - epoch complete
+2026-05-22 23:20:09,119 - INFO - evaluating now!
+2026-05-22 23:20:37,016 - INFO - Epoch [25/1000] (9750) train_mae: 2.0279, val_mae: 2.8890, lr: 0.001000, 407.6s
+2026-05-22 23:26:57,951 - INFO - epoch complete
+2026-05-22 23:26:57,951 - INFO - evaluating now!
+2026-05-22 23:27:25,818 - INFO - Epoch [26/1000] (10125) train_mae: 2.0381, val_mae: 2.8820, lr: 0.001000, 408.8s
+2026-05-22 23:33:46,620 - INFO - epoch complete
+2026-05-22 23:33:46,620 - INFO - evaluating now!
+2026-05-22 23:34:14,630 - INFO - Epoch [27/1000] (10500) train_mae: 2.0398, val_mae: 2.9434, lr: 0.001000, 408.8s
+2026-05-22 23:40:35,498 - INFO - epoch complete
+2026-05-22 23:40:35,498 - INFO - evaluating now!
+2026-05-22 23:41:03,435 - INFO - Epoch [28/1000] (10875) train_mae: 2.0476, val_mae: 2.8815, lr: 0.001000, 408.8s
+2026-05-22 23:47:22,685 - INFO - epoch complete
+2026-05-22 23:47:22,685 - INFO - evaluating now!
+2026-05-22 23:47:50,601 - INFO - Epoch [29/1000] (11250) train_mae: 2.0436, val_mae: 3.1061, lr: 0.000010, 407.2s
+2026-05-22 23:54:11,213 - INFO - epoch complete
+2026-05-22 23:54:11,213 - INFO - evaluating now!
+2026-05-22 23:54:39,093 - INFO - Epoch [30/1000] (11625) train_mae: 2.0643, val_mae: 2.8805, lr: 0.000100, 408.5s
+2026-05-23 00:00:59,688 - INFO - epoch complete
+2026-05-23 00:00:59,688 - INFO - evaluating now!
+2026-05-23 00:01:27,606 - INFO - Epoch [31/1000] (12000) train_mae: 2.0672, val_mae: 3.0900, lr: 0.000100, 408.5s
+2026-05-23 00:07:48,587 - INFO - epoch complete
+2026-05-23 00:07:48,587 - INFO - evaluating now!
+2026-05-23 00:08:16,635 - INFO - Epoch [32/1000] (12375) train_mae: 2.0710, val_mae: 2.9134, lr: 0.000100, 409.0s
+2026-05-23 00:14:36,868 - INFO - epoch complete
+2026-05-23 00:14:36,868 - INFO - evaluating now!
+2026-05-23 00:15:04,705 - INFO - Epoch [33/1000] (12750) train_mae: 2.0928, val_mae: 2.9005, lr: 0.000100, 408.1s
+2026-05-23 00:21:24,113 - INFO - epoch complete
+2026-05-23 00:21:24,113 - INFO - evaluating now!
+2026-05-23 00:21:52,071 - INFO - Epoch [34/1000] (13125) train_mae: 2.1066, val_mae: 2.9333, lr: 0.000100, 407.4s
+2026-05-23 00:28:12,794 - INFO - epoch complete
+2026-05-23 00:28:12,794 - INFO - evaluating now!
+2026-05-23 00:28:40,719 - INFO - Epoch [35/1000] (13500) train_mae: 2.1144, val_mae: 2.9736, lr: 0.000100, 408.6s
+2026-05-23 00:35:01,167 - INFO - epoch complete
+2026-05-23 00:35:01,167 - INFO - evaluating now!
+2026-05-23 00:35:29,144 - INFO - Epoch [36/1000] (13875) train_mae: 2.1478, val_mae: 2.9639, lr: 0.000100, 408.4s
+2026-05-23 00:41:49,683 - INFO - epoch complete
+2026-05-23 00:41:49,683 - INFO - evaluating now!
+2026-05-23 00:42:17,590 - INFO - Epoch [37/1000] (14250) train_mae: 2.1707, val_mae: 2.8680, lr: 0.000100, 408.4s
+2026-05-23 00:42:17,590 - INFO - Saved model at 37
+2026-05-23 00:42:17,590 - INFO - Val loss decrease from 2.8726 to 2.8680, saving to models/la_best.tar
+2026-05-23 00:48:36,927 - INFO - epoch complete
+2026-05-23 00:48:36,927 - INFO - evaluating now!
+2026-05-23 00:49:04,810 - INFO - Epoch [38/1000] (14625) train_mae: 2.1850, val_mae: 2.9080, lr: 0.000100, 407.2s
+2026-05-23 00:55:25,986 - INFO - epoch complete
+2026-05-23 00:55:25,986 - INFO - evaluating now!
+2026-05-23 00:55:53,965 - INFO - Epoch [39/1000] (15000) train_mae: 2.2193, val_mae: 2.8894, lr: 0.000001, 409.2s
+2026-05-23 01:02:14,406 - INFO - epoch complete
+2026-05-23 01:02:14,406 - INFO - evaluating now!
+2026-05-23 01:02:42,382 - INFO - Epoch [40/1000] (15375) train_mae: 2.2575, val_mae: 2.8919, lr: 0.000010, 408.4s
+2026-05-23 01:09:03,406 - INFO - epoch complete
+2026-05-23 01:09:03,406 - INFO - evaluating now!
+2026-05-23 01:09:31,321 - INFO - Epoch [41/1000] (15750) train_mae: 2.2887, val_mae: 2.8907, lr: 0.000010, 408.9s
+2026-05-23 01:15:50,985 - INFO - epoch complete
+2026-05-23 01:15:50,985 - INFO - evaluating now!
+2026-05-23 01:16:18,889 - INFO - Epoch [42/1000] (16125) train_mae: 2.3197, val_mae: 3.0053, lr: 0.000010, 407.6s
+2026-05-23 01:22:39,396 - INFO - epoch complete
+2026-05-23 01:22:39,396 - INFO - evaluating now!
+2026-05-23 01:23:07,392 - INFO - Epoch [43/1000] (16500) train_mae: 2.3514, val_mae: 2.9650, lr: 0.000010, 408.5s
+2026-05-23 01:29:27,816 - INFO - epoch complete
+2026-05-23 01:29:27,816 - INFO - evaluating now!
+2026-05-23 01:29:55,696 - INFO - Epoch [44/1000] (16875) train_mae: 2.3874, val_mae: 2.8957, lr: 0.000010, 408.3s
+2026-05-23 01:36:15,956 - INFO - epoch complete
+2026-05-23 01:36:15,956 - INFO - evaluating now!
+2026-05-23 01:36:43,792 - INFO - Epoch [45/1000] (17250) train_mae: 2.4461, val_mae: 3.0589, lr: 0.000010, 408.1s
+2026-05-23 01:43:02,776 - INFO - epoch complete
+2026-05-23 01:43:02,776 - INFO - evaluating now!
+2026-05-23 01:43:30,697 - INFO - Epoch [46/1000] (17625) train_mae: 2.4729, val_mae: 2.9553, lr: 0.000010, 406.9s
+2026-05-23 01:49:49,790 - INFO - epoch complete
+2026-05-23 01:49:49,790 - INFO - evaluating now!
+2026-05-23 01:50:17,691 - INFO - Epoch [47/1000] (18000) train_mae: 2.4962, val_mae: 2.9092, lr: 0.000010, 407.0s
+2026-05-23 01:56:37,915 - INFO - epoch complete
+2026-05-23 01:56:37,915 - INFO - evaluating now!
+2026-05-23 01:57:05,867 - INFO - Epoch [48/1000] (18375) train_mae: 2.5483, val_mae: 2.8659, lr: 0.000010, 408.2s
+2026-05-23 01:57:05,871 - INFO - Saved model at 48
+2026-05-23 01:57:05,871 - INFO - Val loss decrease from 2.8680 to 2.8659, saving to models/la_best.tar
+2026-05-23 02:03:26,103 - INFO - epoch complete
+2026-05-23 02:03:26,103 - INFO - evaluating now!
+2026-05-23 02:03:53,996 - INFO - Epoch [49/1000] (18750) train_mae: 2.5670, val_mae: 2.8380, lr: 0.000000, 408.1s
+2026-05-23 02:03:53,996 - INFO - Saved model at 49
+2026-05-23 02:03:54,000 - INFO - Val loss decrease from 2.8659 to 2.8380, saving to models/la_best.tar
+2026-05-23 02:10:14,894 - INFO - epoch complete
+2026-05-23 02:10:14,894 - INFO - evaluating now!
+2026-05-23 02:10:42,841 - INFO - Epoch [50/1000] (19125) train_mae: 2.5783, val_mae: 2.8771, lr: 0.000001, 408.8s
+2026-05-23 02:17:02,054 - INFO - epoch complete
+2026-05-23 02:17:02,054 - INFO - evaluating now!
+2026-05-23 02:17:29,867 - INFO - Epoch [51/1000] (19500) train_mae: 2.5814, val_mae: 2.8645, lr: 0.000001, 407.0s
+2026-05-23 02:23:50,338 - INFO - epoch complete
+2026-05-23 02:23:50,338 - INFO - evaluating now!
+2026-05-23 02:24:18,342 - INFO - Epoch [52/1000] (19875) train_mae: 2.6059, val_mae: 2.8673, lr: 0.000001, 408.5s
+2026-05-23 02:30:38,864 - INFO - epoch complete
+2026-05-23 02:30:38,864 - INFO - evaluating now!
+2026-05-23 02:31:06,829 - INFO - Epoch [53/1000] (20250) train_mae: 2.6195, val_mae: 2.9065, lr: 0.000001, 408.5s
+2026-05-23 02:37:27,481 - INFO - epoch complete
+2026-05-23 02:37:27,481 - INFO - evaluating now!
+2026-05-23 02:37:55,427 - INFO - Epoch [54/1000] (20625) train_mae: 2.6798, val_mae: 2.8462, lr: 0.000001, 408.6s
+2026-05-23 02:44:15,372 - INFO - epoch complete
+2026-05-23 02:44:15,372 - INFO - evaluating now!
+2026-05-23 02:44:43,272 - INFO - Epoch [55/1000] (21000) train_mae: 2.6991, val_mae: 2.8881, lr: 0.000001, 407.8s
+2026-05-23 02:51:03,414 - INFO - epoch complete
+2026-05-23 02:51:03,414 - INFO - evaluating now!
+2026-05-23 02:51:31,394 - INFO - Epoch [56/1000] (21375) train_mae: 2.6915, val_mae: 2.9077, lr: 0.000001, 408.1s
+2026-05-23 02:57:52,201 - INFO - epoch complete
+2026-05-23 02:57:52,201 - INFO - evaluating now!
+2026-05-23 02:58:20,165 - INFO - Epoch [57/1000] (21750) train_mae: 2.8423, val_mae: 2.8803, lr: 0.000001, 408.8s
+2026-05-23 03:04:41,344 - INFO - epoch complete
+2026-05-23 03:04:41,344 - INFO - evaluating now!
+2026-05-23 03:05:09,324 - INFO - Epoch [58/1000] (22125) train_mae: 2.8286, val_mae: 2.8555, lr: 0.000001, 409.2s
+2026-05-23 03:11:30,128 - INFO - epoch complete
+2026-05-23 03:11:30,128 - INFO - evaluating now!
+2026-05-23 03:11:58,035 - INFO - Epoch [59/1000] (22500) train_mae: 2.7267, val_mae: 2.8794, lr: 0.000001, 408.7s
+2026-05-23 03:18:17,187 - INFO - epoch complete
+2026-05-23 03:18:17,187 - INFO - evaluating now!
+2026-05-23 03:18:45,077 - INFO - Epoch [60/1000] (22875) train_mae: 2.7107, val_mae: 2.8974, lr: 0.000001, 407.0s
+2026-05-23 03:25:05,951 - INFO - epoch complete
+2026-05-23 03:25:05,951 - INFO - evaluating now!
+2026-05-23 03:25:33,948 - INFO - Epoch [61/1000] (23250) train_mae: 4.8841, val_mae: 7.6507, lr: 0.000001, 408.9s
+2026-05-23 03:31:54,916 - INFO - epoch complete
+2026-05-23 03:31:54,916 - INFO - evaluating now!
+2026-05-23 03:32:22,850 - INFO - Epoch [62/1000] (23625) train_mae: 7.2706, val_mae: 6.9629, lr: 0.000001, 408.9s
+2026-05-23 03:38:43,701 - INFO - epoch complete
+2026-05-23 03:38:43,701 - INFO - evaluating now!
+2026-05-23 03:39:11,694 - INFO - Epoch [63/1000] (24000) train_mae: 7.0729, val_mae: 6.8125, lr: 0.000001, 408.8s
+2026-05-23 03:45:31,413 - INFO - epoch complete
+2026-05-23 03:45:31,413 - INFO - evaluating now!
+2026-05-23 03:45:59,319 - INFO - Epoch [64/1000] (24375) train_mae: 6.8256, val_mae: 6.6411, lr: 0.000001, 407.6s
+2026-05-23 03:52:19,345 - INFO - epoch complete
+2026-05-23 03:52:19,345 - INFO - evaluating now!
+2026-05-23 03:52:47,278 - INFO - Epoch [65/1000] (24750) train_mae: 6.7621, val_mae: 6.5934, lr: 0.000001, 408.0s
+2026-05-23 03:59:07,852 - INFO - epoch complete
+2026-05-23 03:59:07,852 - INFO - evaluating now!
+2026-05-23 03:59:35,769 - INFO - Epoch [66/1000] (25125) train_mae: 6.6199, val_mae: 6.4042, lr: 0.000001, 408.5s
+2026-05-23 04:05:56,536 - INFO - epoch complete
+2026-05-23 04:05:56,536 - INFO - evaluating now!
+2026-05-23 04:06:24,496 - INFO - Epoch [67/1000] (25500) train_mae: 6.6069, val_mae: 6.4625, lr: 0.000001, 408.7s
+2026-05-23 04:12:44,953 - INFO - epoch complete
+2026-05-23 04:12:44,953 - INFO - evaluating now!
+2026-05-23 04:13:12,881 - INFO - Epoch [68/1000] (25875) train_mae: 6.5659, val_mae: 6.2090, lr: 0.000001, 408.4s
+2026-05-23 04:19:32,496 - INFO - epoch complete
+2026-05-23 04:19:32,496 - INFO - evaluating now!
+2026-05-23 04:20:00,453 - INFO - Epoch [69/1000] (26250) train_mae: 6.4828, val_mae: 6.1131, lr: 0.000001, 407.6s
+2026-05-23 04:26:21,411 - INFO - epoch complete
+2026-05-23 04:26:21,411 - INFO - evaluating now!
+2026-05-23 04:26:49,415 - INFO - Epoch [70/1000] (26625) train_mae: 6.7307, val_mae: 6.2017, lr: 0.000001, 409.0s
+2026-05-23 04:33:10,134 - INFO - epoch complete
+2026-05-23 04:33:10,134 - INFO - evaluating now!
+2026-05-23 04:33:38,609 - INFO - Epoch [71/1000] (27000) train_mae: 6.2156, val_mae: 6.0765, lr: 0.000001, 409.2s
+2026-05-23 04:40:07,097 - INFO - epoch complete
+2026-05-23 04:40:07,097 - INFO - evaluating now!
+2026-05-23 04:40:35,488 - INFO - Epoch [72/1000] (27375) train_mae: 6.7425, val_mae: 5.6266, lr: 0.000001, 416.9s
+2026-05-23 04:47:02,023 - INFO - epoch complete
+2026-05-23 04:47:02,023 - INFO - evaluating now!
+2026-05-23 04:47:30,209 - INFO - Epoch [73/1000] (27750) train_mae: 4.9586, val_mae: 3.8807, lr: 0.000001, 414.7s
+2026-05-23 04:53:58,045 - INFO - epoch complete
+2026-05-23 04:53:58,045 - INFO - evaluating now!
+2026-05-23 04:54:26,624 - INFO - Epoch [74/1000] (28125) train_mae: 3.9177, val_mae: 4.0164, lr: 0.000001, 416.4s
+2026-05-23 05:00:55,327 - INFO - epoch complete
+2026-05-23 05:00:55,327 - INFO - evaluating now!
+2026-05-23 05:01:23,781 - INFO - Epoch [75/1000] (28500) train_mae: 3.6895, val_mae: 3.3714, lr: 0.000001, 417.2s
+2026-05-23 05:07:51,027 - INFO - epoch complete
+2026-05-23 05:07:51,027 - INFO - evaluating now!
+2026-05-23 05:08:19,818 - INFO - Epoch [76/1000] (28875) train_mae: 3.4969, val_mae: 3.2554, lr: 0.000001, 416.0s
+2026-05-23 05:14:46,445 - INFO - epoch complete
+2026-05-23 05:14:46,445 - INFO - evaluating now!
+2026-05-23 05:15:14,908 - INFO - Epoch [77/1000] (29250) train_mae: 3.4058, val_mae: 3.2096, lr: 0.000001, 415.1s
+2026-05-23 05:21:43,041 - INFO - epoch complete
+2026-05-23 05:21:43,041 - INFO - evaluating now!
+2026-05-23 05:22:11,193 - INFO - Epoch [78/1000] (29625) train_mae: 3.3425, val_mae: 3.1671, lr: 0.000001, 416.3s
+2026-05-23 05:28:38,353 - INFO - epoch complete
+2026-05-23 05:28:38,353 - INFO - evaluating now!
+2026-05-23 05:29:06,937 - INFO - Epoch [79/1000] (30000) train_mae: 3.2639, val_mae: 3.1157, lr: 0.000001, 415.7s
+2026-05-23 05:35:36,247 - INFO - epoch complete
+2026-05-23 05:35:36,247 - INFO - evaluating now!
+2026-05-23 05:36:04,917 - INFO - Epoch [80/1000] (30375) train_mae: 3.2283, val_mae: 3.0946, lr: 0.000001, 418.0s
+2026-05-23 05:42:33,870 - INFO - epoch complete
+2026-05-23 05:42:33,870 - INFO - evaluating now!
+2026-05-23 05:43:02,073 - INFO - Epoch [81/1000] (30750) train_mae: 3.1894, val_mae: 3.0794, lr: 0.000001, 417.2s
+2026-05-23 05:49:32,432 - INFO - epoch complete
+2026-05-23 05:49:32,432 - INFO - evaluating now!
+2026-05-23 05:50:00,664 - INFO - Epoch [82/1000] (31125) train_mae: 3.1889, val_mae: 3.1083, lr: 0.000001, 418.6s
+2026-05-23 05:56:29,819 - INFO - epoch complete
+2026-05-23 05:56:29,819 - INFO - evaluating now!
+2026-05-23 05:56:58,513 - INFO - Epoch [83/1000] (31500) train_mae: 3.1639, val_mae: 3.0586, lr: 0.000001, 417.8s
+2026-05-23 06:03:27,430 - INFO - epoch complete
+2026-05-23 06:03:27,430 - INFO - evaluating now!
+2026-05-23 06:03:56,289 - INFO - Epoch [84/1000] (31875) train_mae: 3.1331, val_mae: 3.0493, lr: 0.000001, 417.8s
+2026-05-23 06:10:23,710 - INFO - epoch complete
+2026-05-23 06:10:23,714 - INFO - evaluating now!
+2026-05-23 06:10:51,896 - INFO - Epoch [85/1000] (32250) train_mae: 3.1118, val_mae: 3.0464, lr: 0.000001, 415.6s
+2026-05-23 06:17:18,396 - INFO - epoch complete
+2026-05-23 06:17:18,396 - INFO - evaluating now!
+2026-05-23 06:17:46,375 - INFO - Epoch [86/1000] (32625) train_mae: 3.1059, val_mae: 3.0343, lr: 0.000001, 414.5s
+2026-05-23 06:24:13,576 - INFO - epoch complete
+2026-05-23 06:24:13,576 - INFO - evaluating now!
+2026-05-23 06:24:41,853 - INFO - Epoch [87/1000] (33000) train_mae: 3.1033, val_mae: 3.0258, lr: 0.000001, 415.5s
+2026-05-23 06:31:10,145 - INFO - epoch complete
+2026-05-23 06:31:10,149 - INFO - evaluating now!
+2026-05-23 06:31:38,701 - INFO - Epoch [88/1000] (33375) train_mae: 3.1055, val_mae: 2.9939, lr: 0.000001, 416.8s
+2026-05-23 06:38:06,924 - INFO - epoch complete
+2026-05-23 06:38:06,924 - INFO - evaluating now!
+2026-05-23 06:38:35,038 - INFO - Epoch [89/1000] (33750) train_mae: 3.0645, val_mae: 2.9817, lr: 0.000001, 416.3s
+2026-05-23 06:45:02,939 - INFO - epoch complete
+2026-05-23 06:45:02,939 - INFO - evaluating now!
+2026-05-23 06:45:31,096 - INFO - Epoch [90/1000] (34125) train_mae: 3.0488, val_mae: 2.9889, lr: 0.000001, 416.1s
+2026-05-23 06:51:56,619 - INFO - epoch complete
+2026-05-23 06:51:56,619 - INFO - evaluating now!
+2026-05-23 06:52:25,057 - INFO - Epoch [91/1000] (34500) train_mae: 3.0627, val_mae: 3.0248, lr: 0.000001, 414.0s
+2026-05-23 06:58:52,308 - INFO - epoch complete
+2026-05-23 06:58:52,308 - INFO - evaluating now!
+2026-05-23 06:59:20,707 - INFO - Epoch [92/1000] (34875) train_mae: 3.0403, val_mae: 2.9954, lr: 0.000001, 415.7s
+2026-05-23 07:05:48,863 - INFO - epoch complete
+2026-05-23 07:05:48,863 - INFO - evaluating now!
+2026-05-23 07:06:16,970 - INFO - Epoch [93/1000] (35250) train_mae: 3.0336, val_mae: 2.9923, lr: 0.000001, 416.3s
+2026-05-23 07:12:43,335 - INFO - epoch complete
+2026-05-23 07:12:43,335 - INFO - evaluating now!
+2026-05-23 07:13:11,567 - INFO - Epoch [94/1000] (35625) train_mae: 3.0229, val_mae: 2.9598, lr: 0.000001, 414.6s
+2026-05-23 07:19:38,690 - INFO - epoch complete
+2026-05-23 07:19:38,690 - INFO - evaluating now!
+2026-05-23 07:20:06,689 - INFO - Epoch [95/1000] (36000) train_mae: 3.0306, val_mae: 2.9878, lr: 0.000001, 415.1s
+2026-05-23 07:26:34,870 - INFO - epoch complete
+2026-05-23 07:26:34,870 - INFO - evaluating now!
+2026-05-23 07:27:03,688 - INFO - Epoch [96/1000] (36375) train_mae: 3.0299, val_mae: 2.9661, lr: 0.000001, 417.0s
+2026-05-23 07:33:28,518 - INFO - epoch complete
+2026-05-23 07:33:28,518 - INFO - evaluating now!
+2026-05-23 07:33:56,227 - INFO - Epoch [97/1000] (36750) train_mae: 3.0184, val_mae: 2.9898, lr: 0.000001, 412.5s
+2026-05-23 07:40:11,452 - INFO - epoch complete
+2026-05-23 07:40:11,452 - INFO - evaluating now!
+2026-05-23 07:40:39,119 - INFO - Epoch [98/1000] (37125) train_mae: 3.0409, val_mae: 2.9828, lr: 0.000001, 402.9s
+2026-05-23 07:46:54,780 - INFO - epoch complete
+2026-05-23 07:46:54,784 - INFO - evaluating now!
+2026-05-23 07:47:22,363 - INFO - Epoch [99/1000] (37500) train_mae: 3.0263, val_mae: 2.9611, lr: 0.000001, 403.2s
+2026-05-23 07:47:22,363 - WARNING - Early stopping at epoch: 99
+2026-05-23 07:47:22,877 - INFO - Loaded model successfully!
+Evaluate best model on test data for horizon 1, Test MAE: 2.2984, Test MAPE: 0.0558, Test RMSE: 3.9846
+Evaluate best model on test data for horizon 2, Test MAE: 2.5654, Test MAPE: 0.0640, Test RMSE: 4.8012
+Evaluate best model on test data for horizon 3, Test MAE: 2.7544, Test MAPE: 0.0705, Test RMSE: 5.3635
+Evaluate best model on test data for horizon 4, Test MAE: 2.9049, Test MAPE: 0.0760, Test RMSE: 5.8030
+Evaluate best model on test data for horizon 5, Test MAE: 3.0322, Test MAPE: 0.0807, Test RMSE: 6.1615
+Evaluate best model on test data for horizon 6, Test MAE: 3.1571, Test MAPE: 0.0849, Test RMSE: 6.4766
+Evaluate best model on test data for horizon 7, Test MAE: 3.2447, Test MAPE: 0.0882, Test RMSE: 6.7272
+Evaluate best model on test data for horizon 8, Test MAE: 3.3331, Test MAPE: 0.0913, Test RMSE: 6.9584
+Evaluate best model on test data for horizon 9, Test MAE: 3.4164, Test MAPE: 0.0941, Test RMSE: 7.1631
+Evaluate best model on test data for horizon 10, Test MAE: 3.4900, Test MAPE: 0.0966, Test RMSE: 7.3486
+Evaluate best model on test data for horizon 11, Test MAE: 3.5621, Test MAPE: 0.0990, Test RMSE: 7.5213
+Evaluate best model on test data for horizon 12, Test MAE: 3.6343, Test MAPE: 0.1014, Test RMSE: 7.6922
